@@ -402,6 +402,9 @@ rd /q /s ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza\\skin_res</Command
     <Image Include="small.ico" />
     <Image Include="tray.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Unreal\Unreal.vcxproj" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

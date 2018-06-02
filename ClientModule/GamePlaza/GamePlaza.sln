@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiDesigner", "..\DuiDesign
 		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E} = {E106ACD7-4E53-4AEE-942B-D0DD426DB34E}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Unreal", "..\Unreal\Unreal.vcxproj", "{928BF39D-2410-40E4-9FF1-7C83F5DD6217}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_List_Style|Win32 = Debug_List_Style|Win32
@@ -150,6 +152,20 @@ Global
 		{8CC28A8B-CD88-44A7-8994-066CCD8938CB}.UnicodeRelease|Win32.Build.0 = UnicodeRelease|Win32
 		{8CC28A8B-CD88-44A7-8994-066CCD8938CB}.所有配置|Win32.ActiveCfg = UnicodeDebug|Win32
 		{8CC28A8B-CD88-44A7-8994-066CCD8938CB}.所有配置|Win32.Build.0 = UnicodeDebug|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Debug_List_Style|Win32.ActiveCfg = Debug_List_Style|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Debug_List_Style|Win32.Build.0 = Debug_List_Style|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Debug|Win32.ActiveCfg = Debug|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Debug|Win32.Build.0 = Debug|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Release_List_Style|Win32.ActiveCfg = Release_List_Style|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Release_List_Style|Win32.Build.0 = Release_List_Style|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Release|Win32.ActiveCfg = Release|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.Release|Win32.Build.0 = Release|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.UnicodeDebug|Win32.ActiveCfg = Debug|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.UnicodeDebug|Win32.Build.0 = Debug|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.UnicodeRelease|Win32.ActiveCfg = Release|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.UnicodeRelease|Win32.Build.0 = Release|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.所有配置|Win32.ActiveCfg = Debug_List_Style|Win32
+		{928BF39D-2410-40E4-9FF1-7C83F5DD6217}.所有配置|Win32.Build.0 = Debug_List_Style|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

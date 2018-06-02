@@ -27,3 +27,13 @@
 /PublicLibrary/debug/DuiLib_d.lib
 /PublicLibrary/release/DuiLib.exp
 /PublicLibrary/release/DuiLib.lib
+/Bin/Release/Client/GamePlaza
+/Bin/Release_List_Style/Client/GamePlaza
+/PublicLibrary/release/DuiLib_u.exp
+/PublicLibrary/release/DuiLib_u.lib
+/PublicLibrary/debug/DuiLib_ud.exp
+/PublicLibrary/debug/DuiLib_ud.lib
+/ClientModule/UserMenu/Build
+/ClientModule/UpdateMode/Build
+/ClientModule/Unreal/Build
+/ClientModule/DuiDesigner/Build

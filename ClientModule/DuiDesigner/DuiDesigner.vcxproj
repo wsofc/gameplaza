@@ -80,8 +80,14 @@
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>..\\..\\Bin\\UnicodeDebug\\Client\\DuiDesigner.exe</OutputFile>
+      <OutputFile>..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)\\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\\..\\Bin\\Debug\\Client\\msvcp120d.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\Debug\\Client\\msvcr120d.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\Debug\\Client\\msvcr71d.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\Debug\\Client\\msftedit.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'">
     <Midl>
@@ -108,7 +114,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <OutputFile>..\\..\\Bin\\UnicodeRelease\\Client\\DuiDesigner.exe</OutputFile>
+      <OutputFile>..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)\\$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
@@ -116,6 +122,12 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /y ..\\..\\Bin\\Release\\Client\\msvcp120.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\Release\\Client\\msvcr120.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\Release\\Client\\msvcr71.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\Release\\Client\\msftedit.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\ThirdParty\tinyxml\tinystr.cpp">
