@@ -62,17 +62,17 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <OutputFile>..\\..\\Bin\\JSON加解密\\Debug\\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>..\\..\\Bin\\$(TargetName)\\Debug\\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>..\..\PublicLibrary\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
       <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
     <PostBuildEvent>
-      <Command>copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\DuiLib_d.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcp120.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr120.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr71d.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msftedit.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
+      <Command>copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\DuiLib_d.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcp120d.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr120d.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr71d.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msftedit.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -96,16 +96,17 @@ copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msftedit.dll ..\\..\\Bin\\JSO
       <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
       <AdditionalLibraryDirectories>..\..\PublicLibrary\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>..\\..\\Bin\\$(TargetName)\\Release\\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
     <PostBuildEvent>
-      <Command>rd /q /s ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)\\res
-xcopy /i /e /h /y ..\\..\\Bin\\JSON加解密\\Debug\\res ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)\\res
+      <Command>rd /q /s ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)\\res
+xcopy /i /e /h /y ..\\..\\Bin\\$(TargetName)\\Debug\\res ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)\\res
 
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\DuiLib.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcp120.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr120.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr71.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
-copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msftedit.dll ..\\..\\Bin\\JSON加解密\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\DuiLib.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcp120.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr120.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msvcr71.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
+copy /y ..\\..\\Bin\\$(ConfigurationName)\\Client\\msftedit.dll ..\\..\\Bin\\$(TargetName)\\$(ConfigurationName)
 
 </Command>
     </PostBuildEvent>
