@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container>
+        <TabLayout name="info_switch_2-switch">
+            <TileLayout name="info_switch_2-sys_head_panel" float="true" pos="0,10,0,0" width="428" height="250" vscrollbar="true" />
+            <Container visible="false">
+                <Label name="info_switch_2-thumbnail_01" float="true" pos="30,90,0,0" width="40" height="40" bkimage="hall/info/default_pic_01.png" visible="false" disabledtextcolor="#00000000" />
+                <Label name="info_switch_2-thumbnail_02" float="true" pos="115,70,0,0" width="80" height="80" bkimage="hall/info/default_pic_02.png" visible="false" disabledtextcolor="#00000000" />
+                <Container float="true" pos="245,30,0,0" width="160" height="160" visible="false">
+                    <Button name="info_switch_2-choose_btn" visible="false" disabledtextcolor="#00000000" normalimage="hall/info/btn_01_01.png" hotimage="hall/info/btn_01_02.png" pushedimage="hall/info/btn_01_03.png" />
+                    <ScreenshotBox bordercolor="#FF0000ee" bordersize="1" inset="2,2,2,2" name="info_switch_2-head_shot_box" visible="false" />
+                </Container>
+                <Label text="桌面形象" float="true" pos="20,160,0,0" width="60" height="30" visible="false" textcolor="#FF000001" disabledtextcolor="#00000000" font="1" align="center" />
+                <Label text="游戏中形象" float="true" pos="115,160,0,0" width="80" height="30" visible="false" textcolor="#FF000001" disabledtextcolor="#00000000" font="1" align="center" />
+                <Text text="禁止使用色情，反动等非法图片，一经发现，本公司有权进行封号处理，未经允许，禁止使用他人照片。" float="true" pos="62,223,0,0" width="360" height="40" visible="false" textpadding="2,0,2,0" textcolor="#FF000001" disabledtextcolor="#00000000" font="1" />
+                <Text text="注意:" float="true" pos="20,223,0,0" width="42" height="30" visible="false" textpadding="2,0,2,0" textcolor="#FFE32C21" disabledtextcolor="#00000000" font="1" />
+            </Container>
+        </TabLayout>
+        <Button name="info_switch_2-btn_ensure" text="确 认" bordersize="1" float="true" pos="48,272,0,0" width="105" height="33" focusbordercolor="#FFFFFFFF" tab="true" font="2" normalimage="file=&apos;common/button/btn_02.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_02.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_02.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_02.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+        <Button name="info_switch_2-btn_cancel" text="取 消" bordersize="1" float="true" pos="275,272,0,0" width="105" height="33" focusbordercolor="#FFFFFFFF" tab="true" font="2" normalimage="file=&apos;common/button/btn_02.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_02.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_02.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_02.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+    </Container>
+</Window>

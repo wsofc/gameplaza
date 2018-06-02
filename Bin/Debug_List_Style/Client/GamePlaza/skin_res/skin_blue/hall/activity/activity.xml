@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="560,360" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="12" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="13" bold="false" italic="false" />
+    <Container width="636" height="458" bkimage="file=&apos;common/blocks/dlg_block.png&apos; corner=&apos;10,40,10,10&apos;">
+        <Label text="银行" float="true" pos="0,0,0,0" width="80" height="30" textpadding="10,4,0,0" textcolor="#FF000001" font="0" />
+        <Control float="true" pos="2,34,0,0" width="138" height="322" bkimage="file=&apos;common/blocks/block_gray.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Option name="activity-opt_1" text="每日签到" bordersize="1" float="true" pos="2,34,0,0" width="138" height="38" focusbordercolor="#FF000000" tab="true" textcolor="#FF000001" font="0" hotimage="file=&apos;common/list/hot.png&apos; corner=&apos;6,6,6,6&apos;" hottextcolor="#FF5175B1" group="bank_op" selected="true" selectedimage="file=&apos;common/list/select.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="2,72,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="activity-opt_2" text="领取低保" bordersize="1" float="true" pos="2,75,0,0" width="138" height="38" focusbordercolor="#FF000000" tab="true" textcolor="#FF000001" font="0" hotimage="file=&apos;common/list/hot.png&apos; corner=&apos;6,6,6,6&apos;" hottextcolor="#FF5175B1" group="bank_op" selectedimage="file=&apos;common/list/select.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="2,114,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <TabLayout name="activity-switch" float="true" pos="142,33,0,0" width="414" height="322">
+            <WkeWebkit name="activity-web_1" />
+            <WkeWebkit name="activity-web_2" />
+        </TabLayout>
+        <Button name="activity-closebtn" bordersize="1" float="true" pos="508,3,0,0" width="43" height="26" focusbordercolor="#FFFFFFFF" align="center" normalimage="file=&apos;common/button/close.png&apos; source=&apos;0,0,43,26&apos;" hotimage="file=&apos;common/button/close.png&apos; source=&apos;43,0,86,26&apos;" pushedimage="file=&apos;common/button/close.png&apos; source=&apos;86,0,129,26&apos;" disabledimage="file=&apos;common/button/close.png&apos; source=&apos;129,0,172,26&apos;" />
+    </Container>
+</Window>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<HorizontalLayout>
+		<table_panel name="room_panel-table_panel" />
+		<sidebar_panel name="room_panel-sidebar_panel" width="240" />
+	</HorizontalLayout>
+</Window>

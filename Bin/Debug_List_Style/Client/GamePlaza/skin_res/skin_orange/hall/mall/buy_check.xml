@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,136" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="12" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="13" bold="false" italic="false" />
+    <Container bkimage="file=&apos;common/blocks/dlg_block.png&apos; corner=&apos;10,40,10,10&apos;">
+        <Label text="购买物品" float="true" pos="0,0,0,0" width="80" height="30" textpadding="10,0,0,0" textcolor="#FF000001" font="0" />
+        <Label text="请输入您的银行密码:" float="true" pos="20,47,0,0" width="150" height="20" textcolor="#FF000001" font="1" />
+        <RichEdit name="mall_buy_check-edt_password" float="true" pos="20,74,0,0" width="170" height="22" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" bkcolor="#FFFFFFFF" tab="true" font="0" textcolor="#FFFF0000" maxchar="20" readonlyshowcaret="true" password="true" autohscroll="true" textpadding="10,4,10,0" />
+        <Option name="mall_buy_check-opt_password" bordersize="1" float="true" pos="20,105,0,0" width="17" height="17" bkimage="file=&apos;common/button/btn_hot.png&apos; aligncenter=&apos;true&apos;" focusbordercolor="#FFFF0000" tab="true" selectedimage="common/blocks/option_sel_1.png" />
+        <Label text="记住密码(仅对本次登录有效)" float="true" pos="40,104,0,0" width="193" height="20" textpadding="2,0,2,0" textcolor="#FF000001" font="1" />
+        <Button name="mall_buy_check-btn_ensure" text="确 定" bordersize="1" float="true" pos="207,74,0,0" width="70" height="24" focusbordercolor="#FFFF0000" tab="true" textcolor="#FF000001" font="1" normalimage="file=&apos;common/button/btn_03.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_03.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_03.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_03.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+        <Button name="mall_buy_check-btn_close" bordersize="1" float="true" pos="249,3,0,0" width="43" height="26" focusbordercolor="#FFFFFFFF" align="center" normalimage="file=&apos;common/button/close.png&apos; source=&apos;0,0,43,26&apos;" hotimage="file=&apos;common/button/close.png&apos; source=&apos;43,0,86,26&apos;" pushedimage="file=&apos;common/button/close.png&apos; source=&apos;86,0,129,26&apos;" disabledimage="file=&apos;common/button/close.png&apos; source=&apos;129,0,172,26&apos;" />
+    </Container>
+</Window>

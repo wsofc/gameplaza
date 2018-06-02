@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="200,30">
+    <Font id="0" name="幼圆" size="16" bold="true" italic="false" />
+	
+	<!-- 注:具体透明不渐变写入代码中，因为要提取bkimage中的fade字段还要各种检测，太麻烦，直接代码格式化来得方便 -->
+	<!-- 主要还是库的UI太坑 -->
+    <VerticalLayout name="toast-layout" width="200" height="30" bkimage="file=&apos;dialog/toast_bg.png&apos; corner=&apos;10,10,10,10&apos;" mouse="false">
+        <Label name="toast-text_content" float="true" pos="0,0,0,0" width="200" height="30" mouse="false" textcolor="#FF000001" textpadding="2,2,2,2" font="0" align="center" endellipsis="true" />
+    </VerticalLayout>
+</Window>

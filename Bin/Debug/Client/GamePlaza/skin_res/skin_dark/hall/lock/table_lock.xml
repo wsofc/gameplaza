@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="370,180" caption="0,0,0,35" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="15" bold="false" italic="false" />
+    <Container bkimage="file=&apos;common/bg/bg_2.png&apos; corner=&apos;10,50,10,10&apos;">
+        <Label float="true" pos="9,9,0,0" width="69" height="18" bkimage="file=&apos;hall/lock/lab_01.png&apos; aligncenter=&apos;true&apos;" />
+        <Label text="该桌已被锁定,请输入密码:" float="true" pos="30,80,0,0" width="180" height="20" textcolor="#FF000001" font="1" />
+        <RichEdit name="table_lock-edt_password" float="true" pos="213,76,0,0" width="127" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" bkcolor="#FFFFFFFF" tab="true" font="0" textcolor="#FFFF0000" maxchar="18" readonlyshowcaret="true" password="true" autohscroll="true" textpadding="8,6,8,0" />
+        <Button name="table_lock-btn_ensure" bordersize="1" float="true" pos="65,136,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_11_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_11_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_11_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_ensure.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="table_lock-btn_cancel" bordersize="1" float="true" pos="222,135,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_10_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_10_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_10_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_cancel.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="table_lock-btn_close" bordersize="1" float="true" pos="316,3,0,0" width="44" height="24" focusbordercolor="#FFFF0000" tab="true" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; corner=&apos;0,72,44,96&apos;" />
+    </Container>
+</Window>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,250" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="true" italic="false" />
+    <Font id="1" name="宋体" size="16" bold="true" italic="false" />
+    <Font id="2" name="宋体" size="12" bold="false" italic="false" />
+    <Container bkimage="file=&apos;common/bg/bg_2.png&apos; corner=&apos;10,50,10,10&apos;">
+        <Label text="账号" float="true" pos="20,55,0,0" width="60" height="20" font="1" align="right" />
+        <Label text="手机号" float="true" pos="20,105,0,0" width="60" height="20" font="1" align="right" />
+        <Label text="验证码" float="true" pos="20,155,0,0" width="60" height="20" font="1" align="right" />
+        <RichEdit name="unbind-edt_account" float="true" pos="86,50,0,0" width="200" height="32" tab="true" font="1" maxchar="18" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="16,7,16,7" />
+        <RichEdit name="unbind-edt_telphone" float="true" pos="86,100,0,0" width="200" height="32" tab="true" font="1" maxchar="15" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="16,7,16,7" />
+        <RichEdit name="unbind-edt_vertcode" float="true" pos="86,150,0,0" width="200" height="32" tab="true" font="1" maxchar="4" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="16,7,16,7" />
+        <Button name="unbind-btn_getcode" text="点击获取验证码" bordersize="1" float="true" pos="188,157,0,0" width="90" height="20" focusbordercolor="#FFFF0000" tab="true" textcolor="#FF0000FF" font="2" align="center" pushedtextcolor="#FFFF0000" />
+        <Control name="unbind-ctl_account" float="true" pos="294,57,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+        <Control name="unbind-ctl_telphone" float="true" pos="294,109,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+        <Control name="unbind-ctl_vertcode" float="true" pos="294,158,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+        <Button name="unbind-btn_ensure" bordersize="1" float="true" pos="45,202,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_11_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_11_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_11_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_ensure.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="unbind-btn_cancel" bordersize="1" float="true" pos="222,200,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_10_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_10_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_10_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_cancel.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="unbind-btn_close" bordersize="1" float="true" pos="293,4,0,0" width="44" height="24" focusbordercolor="#FFFF0000" tab="true" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,72,44,96&apos;" />
+        <Label text="解锁本机" float="true" pos="10,7,0,0" width="80" height="20" textcolor="#FFFFFFFF" font="1" align="center" />
+    </Container>
+</Window>

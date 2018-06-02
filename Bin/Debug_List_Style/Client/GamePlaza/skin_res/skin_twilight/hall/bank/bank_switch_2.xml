@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container>
+        <Label text="输入银行取款密码：" float="true" pos="80,34,0,0" width="152" height="17" textcolor="#FF000001" font="1" />
+        <Label text="输入新的取款密码：" float="true" pos="80,104,0,0" width="152" height="17" textcolor="#FF000001" font="1" />
+        <Label text="确认新的取款密码：" float="true" pos="80,175,0,0" width="152" height="17" textcolor="#FF000001" font="1" />
+        <Control name="bank-switch_2-src_ctl" float="true" pos="320,59,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+        <Control name="bank-switch_2-cfm_ctl" float="true" pos="320,201,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+        <Control name="bank-switch_2-new_ctl" float="true" pos="320,130,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+        <RichEdit name="bank-switch_2-src_pw" float="true" pos="80,55,0,0" width="224" height="22" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="20" canpaste="false" password="true" rich="true" autohscroll="true" textpadding="10,4,10,0" />
+        <RichEdit name="bank-switch_2-new_pw" float="true" pos="80,126,0,0" width="224" height="22" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="20" canpaste="false" password="true" rich="true" autohscroll="true" textpadding="10,4,10,0" />
+        <RichEdit name="bank-switch_2-cfm_pw" float="true" pos="80,197,0,0" width="224" height="22" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="20" canpaste="false" password="true" rich="true" autohscroll="true" textpadding="10,4,10,0" />
+        <Button name="bank-switch_2-ensure" text="确 定" bordersize="1" float="true" pos="150,240,0,0" width="85" height="30" focusbordercolor="#FFFF0000" tab="true" textcolor="#FF000001" font="1" normalimage="file=&apos;common/button/btn_03.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_03.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_03.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_03.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+    </Container>
+</Window>

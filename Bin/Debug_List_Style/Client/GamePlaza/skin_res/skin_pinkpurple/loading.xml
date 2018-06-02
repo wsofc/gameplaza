@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,110" caption="0,0,0,200" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="12" bold="false" italic="false" />
+    <Container width="400" height="200" bkimage="file=&apos;common/blocks/dlg_block.png&apos; corner=&apos;10,40,10,10&apos;">
+        <Button name="loading-close_btn" float="true" pos="298,3,0,0" width="43" height="26" focusbordercolor="#FF0000FF" tab="true" align="center" normalimage="file=&apos;common/button/close.png&apos; source=&apos;0,0,43,26&apos;" hotimage="file=&apos;common/button/close.png&apos; source=&apos;43,0,86,26&apos;" pushedimage="file=&apos;common/button/close.png&apos; source=&apos;86,0,129,26&apos;" disabledimage="file=&apos;common/button/close.png&apos; source=&apos;129,0,172,26&apos;" />
+        <Progress name="loading-progress" float="true" pos="66,80,0,0" width="216" height="14" bkimage="file=&apos;common/blocks/progress_bg_3.png&apos; corner=&apos;4,4,4,4&apos;" foreimage="file=&apos;common/blocks/progress_fg_3.png&apos; corner=&apos;4,4,4,4&apos;" min="0" max="100" value="0" hor="true" isstretchfore="false" />
+        <Label text="正在加载，请稍后..." float="true" pos="67,50,0,0" width="216" height="20" textcolor="#FF000001" font="1" align="center" />
+    </Container>
+</Window>

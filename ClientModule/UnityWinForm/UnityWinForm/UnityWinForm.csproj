@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E5A4613-4247-43DC-A62A-CC154EB35C8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnityWinForm</RootNamespace>
+    <AssemblyName>ShellForm</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\Debug\Client\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;GAME_TEST_SWITCH</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\Release\Client\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_List_Style|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\Bin\Debug_List_Style\Client\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;GAME_TEST_SWITCH</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_List_Style|AnyCPU'">
+    <OutputPath>..\..\..\Bin\Release_List_Style\Client\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>assets\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="assets\src\DataMgr.cs" />
+    <Compile Include="assets\src\Define.cs" />
+    <Compile Include="assets\src\event\EventNode.cs" />
+    <Compile Include="assets\src\event\IEventListener.cs" />
+    <Compile Include="assets\src\NestedWindow.cs" />
+    <Compile Include="assets\src\Protocol.cs" />
+    <Compile Include="assets\src\Resource.cs" />
+    <Compile Include="assets\src\server\PacketHelper.cs" />
+    <Compile Include="assets\src\server\Server.cs" />
+    <Compile Include="assets\src\server\ServerPackage.cs" />
+    <Compile Include="assets\src\ui\DataGridViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="assets\src\UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assets\src\UserModel.cs" />
+    <Compile Include="assets\src\Util.cs" />
+    <Compile Include="assets\src\WinAPI.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UnityWinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnityWinForm.Designer.cs">
+      <DependentUpon>UnityWinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UnityWinForm.resx">
+      <DependentUpon>UnityWinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\Config.json" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\ui\loading_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\ui\chat_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\ui\loading_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\icon\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\ui\siderbar_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\ui\member_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\ui\headPic_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\ui\cell_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\headPic\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\member_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\member_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\member_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\member_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\list\sep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\button\btn_01_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\button\btn_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\img\common\button\btn_push.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

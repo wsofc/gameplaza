@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="233,80">
+    <Container bkimage="file=&apos;hall/prop/prop_bg.png&apos; aligncenter=&apos;true&apos;">
+        <Control float="true" pos="42,4,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-prop_btn_0" float="true" pos="43,5,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="76,4,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-prop_btn_1" float="true" pos="77,5,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="110,4,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-prop_btn_2" float="true" pos="111,5,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="144,4,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-prop_btn_3" float="true" pos="145,5,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="178,4,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-prop_btn_4" float="true" pos="179,5,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="42,44,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-gift_btn_0" float="true" pos="43,45,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="76,44,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-gift_btn_1" float="true" pos="77,45,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="110,44,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-gift_btn_2" float="true" pos="111,45,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="144,44,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-gift_btn_3" float="true" pos="145,45,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control float="true" pos="178,44,0,0" width="32" height="32" bkimage="file=&apos;hall/prop/prop_box.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="prop_panel-gift_btn_4" float="true" pos="179,45,0,0" width="30" height="30" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Button name="prop_panel-prop_left" float="true" pos="29,13,0,0" width="11" height="15" normalimage="hall/prop/btn_01_01.png" hotimage="hall/prop/btn_01_02.png" pushedimage="hall/prop/btn_01_03.png" disabledimage="hall/prop/btn_01_04.png" />
+        <Button name="prop_panel-prop_right" float="true" pos="212,13,0,0" width="11" height="15" normalimage="hall/prop/btn_02_01.png" hotimage="hall/prop/btn_02_02.png" pushedimage="hall/prop/btn_02_03.png" disabledimage="hall/prop/btn_02_04.png" />
+        <Button name="prop_panel-gift_left" float="true" pos="29,53,0,0" width="11" height="15" normalimage="hall/prop/btn_01_01.png" hotimage="hall/prop/btn_01_02.png" pushedimage="hall/prop/btn_01_03.png" disabledimage="hall/prop/btn_01_04.png" />
+        <Button name="prop_panel-gift_right" float="true" pos="212,53,0,0" width="11" height="15" normalimage="hall/prop/btn_02_01.png" hotimage="hall/prop/btn_02_02.png" pushedimage="hall/prop/btn_02_03.png" disabledimage="hall/prop/btn_02_04.png" />
+    </Container>
+</Window>

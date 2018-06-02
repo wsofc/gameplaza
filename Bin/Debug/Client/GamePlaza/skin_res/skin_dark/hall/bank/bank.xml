@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="556,400" caption="0,0,0,80" bktrans="true">
+    <Font id="0" name="幼圆" size="15" bold="true" italic="false" />
+    <Font id="1" name="幼圆" size="16" bold="true" italic="false" />
+    <Font id="2" name="幼圆" size="12" bold="true" italic="false" />
+    <Font id="3" name="宋体" size="12" bold="false" italic="false" />
+    <VerticalLayout bkimage="hall/bank/bg_bank.png">
+        <Control float="true" pos="191,26,0,0" width="174" height="32" bkimage="hall/bank/title_bank.png" />
+        <Control name="bank-ctl_split_0" float="true" pos="8,71,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_1" bordersize="1" float="true" pos="6,74,0,0" width="138" height="38" focusbordercolor="#FFFFFFFF" tab="true" hotbkcolor="#7F8FBAF3" group="bank_op" selected="true" foreimage="file=&apos;hall/bank/opt_01.png&apos; aligncenter=&apos;true&apos;" selectedimage="common/button/op_btn_03_01.png" />
+        <Control name="bank-split_1" float="true" pos="8,112,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_2" bordersize="1" float="true" pos="6,115,0,0" width="138" height="38" focusbordercolor="#FFFFFFFF" tab="true" hotbkcolor="#7F8FBAF3" group="bank_op" foreimage="file=&apos;hall/bank/opt_02.png&apos; aligncenter=&apos;true&apos;" selectedimage="common/button/op_btn_03_01.png" />
+        <Control name="bank-split_2" float="true" pos="8,153,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_3" bordersize="1" float="true" pos="6,156,0,0" width="138" height="38" focusbordercolor="#FFFFFFFF" tab="true" hotbkcolor="#7F8FBAF3" group="bank_op" foreimage="file=&apos;hall/bank/opt_03.png&apos; aligncenter=&apos;true&apos;" selectedimage="common/button/op_btn_03_01.png" />
+		<Control name="bank-plit_3" float="true" pos="8,194,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_4" bordersize="1" float="true" pos="6,197,0,0" width="138" height="38" focusbordercolor="#FFFFFFFF" tab="true" hotbkcolor="#7F8FBAF3" group="bank_op" foreimage="file=&apos;hall/bank/opt_04.png&apos; aligncenter=&apos;true&apos;" selectedimage="common/button/op_btn_03_01.png" />
+		<Control name="bank-split_4" float="true" pos="8,235,0,0" width="134" height="2" bkimage="hall/split.png" />
+		<Option name="bank-opt_5" bordersize="1" float="true" pos="6,238,0,0" width="138" height="38" focusbordercolor="#FFFFFFFF" tab="true" hotbkcolor="#7F8FBAF3" group="bank_op" foreimage="file=&apos;hall/bank/opt_05.png&apos; aligncenter=&apos;true&apos;" selectedimage="common/button/op_btn_03_01.png" />
+		<Control name="bank-split_5" float="true" pos="8,276,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <TabLayout name="bank-switch" float="true" pos="146,70,0,0" width="405" height="285">
+            <bank_switch_1 name="bank-switch_1" />
+            <bank_switch_2 name="bank-switch_2" />
+            <bank_switch_3 name="bank-switch_3" />
+			<bank_switch_4 name="bank-switch_4" />
+			<bank_switch_5 name="bank-switch_5" />
+        </TabLayout>
+        <Button name="bank-closebtn" bordersize="1" float="true" pos="504,18,0,0" width="27" height="27" focusbordercolor="#FFFFFFFF" tab="true" normalimage="common/button/btn_close_normal.png" hotimage="common/button/btn_close_hot.png" pushedimage="common/button/btn_close_down.png" />
+        <Text text="温馨提示:" float="true" pos="168,360,0,0" width="60" height="28" textpadding="2,0,2,0" textcolor="#FFFF0000" font="3" />
+        <Text text="默认的银行密码为您的登录密码,为了您的账户安全,请修改,切勿和登录密码一致" float="true" pos="228,360,0,0" width="298" height="28" textpadding="2,0,2,0" textcolor="#FF969696" font="3" endellipsis="true" />
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+	<Font id="0" name="宋体" size="12" bold="false" default="true" />
+	<Default name="Menu" value="font=&quot;0&quot; bordersize=&quot;1&quot; borderround=&quot;2,2&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;10,0,0,0&quot; itemtextcolor=&quot;0xFFFFFFFF&quot; itemhottextcolor=&quot;0xFFFFFFFF&quot; itemselectedtextcolor=&quot;0xFF000001&quot; itemdisabledbkcolor=&quot;0x7F7A7A7A&quot; bkimage=&quot;file='common/blocks/block_black.png' corner='4,4,4,4'&quot; itemselectedbkcolor=&quot;0x994E649D&quot;" />
+	<Menu>
+		<MenuElement name="usermenu-nickname" text="昵称："  />
+		<MenuElement name="usermenu-gameid" text="游戏ID：" />
+		<MenuElement name="usermenu-golds" text="金币：" />
+		<MenuElement name="usermenu-underwrite" text="个性签名：" />
+	</Menu>
+</Window>

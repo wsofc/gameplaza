@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="420,350" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <VerticalLayout bkimage="file=&apos;common/bg/bg_2.png&apos; corner=&apos;10,50,10,10&apos;">
+        <Label float="true" pos="19,7,0,0" width="64" height="19" bkimage="file=&apos;hall/mall/title_buy.png&apos; aligncenter=&apos;true&apos;" />
+        <Text text="道具名称：" float="true" pos="130,55,0,0" width="100" height="20" textpadding="2,2,2,2" textcolor="#FF737479" font="0" align="right" />
+        <Text text="购买数量：" float="true" pos="130,90,0,0" width="100" height="20" textpadding="2,2,2,2" textcolor="#FF737479" font="0" align="right" />
+        <Text text="总共花费：" float="true" pos="130,125,0,0" width="100" height="20" textpadding="2,2,2,2" textcolor="#FF737479" font="0" align="right" />
+        <Text text="大写：" float="true" pos="130,160,0,0" width="100" height="20" textpadding="2,2,2,2" textcolor="#FF737479" font="0" align="right" />
+        <Text text="赠送魅力：" float="true" pos="130,195,0,0" width="100" height="20" textpadding="2,2,2,2" textcolor="#FF737479" font="0" align="right" />
+        <Text text="接收ID：" float="true" pos="130,230,0,0" width="100" height="20" textpadding="2,2,2,2" textcolor="#FF737479" font="0" align="right" />
+        <Label name="mall_buy-lab_icon" float="true" pos="49,74,0,0" width="65" height="65" bkimage="file=&apos;hall/mall/goods/goods_purple.png&apos; aligncenter=&apos;true&apos;" />
+        <Text name="mall_buy-txt_name" text="商品x" float="true" pos="240,55,0,0" width="150" height="20" textpadding="2,2,2,2" textcolor="#FF007CFF" font="0" align="center" />
+        <Button name="mall_buy-btn_sub" float="true" pos="240,86,0,0" width="28" height="27" normalimage="hall/mall/btn_01_01.png" hotimage="hall/mall/btn_01_02.png" pushedimage="hall/mall/btn_01_03.png" disabledimage="hall/mall/btn_01_04.png" />
+        <RichEdit name="mall_buy-edt_count" text="0" float="true" pos="268,87,0,0" width="94" height="26" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="0" textcolor="#FF737479" maxchar="3" canpaste="false" align="center" textpadding="4,6,6,4" />
+        <Button name="mall_buy-btn_add" float="true" pos="362,86,0,0" width="28" height="27" normalimage="hall/mall/btn_02_01.png" hotimage="hall/mall/btn_02_02.png" pushedimage="hall/mall/btn_02_03.png" disabledimage="hall/mall/btn_02_04.png" />
+        <Text name="mall_buy-txt_charm" text="0点" float="true" pos="240,195,0,0" width="150" height="20" textpadding="2,2,2,2" textcolor="#FF007CFF" font="0" align="center" />
+        <Text name="mall_buy-txt_price" text="0金币" float="true" pos="240,125,0,0" width="150" height="20" textpadding="2,2,2,2" textcolor="#FF007CFF" font="0" align="center" />
+        <Text name="mall_buy-txt_cost_capital" text="零" float="true" pos="240,160,0,0" width="150" height="20" textpadding="2,2,2,2" textcolor="#FF007CFF" font="0" align="center" endellipsis="true" />
+        <RichEdit name="mall_buy-edt_id" text="0" float="true" pos="240,227,0,0" width="150" height="26" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="0" textcolor="#FF737479" maxchar="16" align="center" textpadding="4,6,6,4" />
+        <Button name="mall_buy-btn_nickname" text="点击核查昵称：" bordersize="1" float="true" pos="130,265,0,0" width="100" height="20" focusbordercolor="#FFFF0000" tab="true" textcolor="#FF007CFF" font="0" align="right" pushedtextcolor="#FFFF0000" hottextcolor="#FF0000FF" />
+        <RichEdit name="mall_buy-edt_nickname" float="true" pos="240,262,0,0" width="150" height="26" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="0" textcolor="#FF737479" maxchar="30" readonly="true" readonlyshowcaret="true" canpaste="false" align="center" autohscroll="true" textpadding="4,6,6,4" />
+        <Button name="mall_buy-btn_ensure" bordersize="1" float="true" pos="90,300,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_11_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_11_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_11_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_ensure.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="mall_buy-btn_cancel" bordersize="1" float="true" pos="253,300,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_10_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_10_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_10_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_cancel.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="mall_buy-btn_close" bordersize="1" float="true" pos="364,2,0,0" width="44" height="24" focusbordercolor="#FFFF0000" tab="true" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; corner=&apos;0,72,44,96&apos;" />
+    </VerticalLayout>
+</Window>

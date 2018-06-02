@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="558,521" caption="0,0,0,50" bktrans="true">
+    <Font id="0" name="宋体" size="12" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="2" name="宋体" size="14" bold="true" italic="false" />
+    <Container bkimage="hall/mall/mall_bg.png">
+        <Label float="true" pos="207,14,0,0" width="145" height="31" bkimage="file=&apos;hall/mall/title_mall.png&apos; aligncenter=&apos;true&apos;" />
+        <Label text="温馨提示：点击物品图标即可购买！" float="true" pos="234,57,0,0" width="260" height="20" textcolor="#FF007CFF" font="2" />
+        <Option name="mall-opt_mall" float="true" pos="24,52,0,0" width="81" height="33" bkimage="file=&apos;hall/mall/opt_btn_1.png&apos; corner=&apos;10,10,10,10&apos;" group="hall_mall_group" selected="true" foreimage="file=&apos;hall/mall/text_01.png&apos; aligncenter=&apos;true&apos;" selectedimage="file=&apos;hall/mall/opt_btn_2.png&apos; corner=&apos;10,10,10,10&apos;" />
+        <!-- 注释掉背包单选项 -->
+		<!-- <Option name="mall-opt_bag" float="true" pos="105,52,0,0" width="81" height="33" bkimage="file=&apos;hall/mall/opt_btn_1.png&apos; corner=&apos;10,10,10,10&apos;" group="hall_mall_group" foreimage="file=&apos;hall/mall/text_02.png&apos; aligncenter=&apos;true&apos;" selectedimage="file=&apos;hall/mall/opt_btn_2.png&apos; corner=&apos;10,10,10,10&apos;" /> -->
+        <TabLayout name="mall-tablayout" float="true" pos="19,90,0,0" width="520" height="360">
+            <Container name="mall-panel_mall" />
+            <Container name="mall-panel_bag" visible="false" />
+        </TabLayout>
+        <Label name="mall-lab_page" text="1/1" float="true" pos="233,458,0,0" width="93" height="34" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" font="1" align="center" />
+        <Button name="mall-btn_last_page" float="true" pos="195,461,0,0" width="28" height="27" normalimage="hall/mall/btn_01_01.png" hotimage="hall/mall/btn_01_02.png" pushedimage="hall/mall/btn_01_03.png" disabledimage="hall/mall/btn_01_04.png" />
+        <Button name="mall-btn_next_page" float="true" pos="336,460,0,0" width="28" height="27" normalimage="hall/mall/btn_02_01.png" hotimage="hall/mall/btn_02_02.png" pushedimage="hall/mall/btn_02_03.png" disabledimage="hall/mall/btn_02_04.png" />
+        <Button name="mall-btn_close" bordersize="1" float="true" pos="502,16,0,0" width="27" height="27" focusbordercolor="#FFFFFFFF" tab="true" normalimage="common/button/btn_close_normal.png" hotimage="common/button/btn_close_hot.png" pushedimage="common/button/btn_close_down.png" />
+    </Container>
+</Window>

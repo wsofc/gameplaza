@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1024,738">
+    <Container bkimage="file=&apos;hall/room/room_bg.png&apos; corner=&apos;4,4,4,4&apos;">
+        <HorizontalLayout>
+            <Control width="5" />
+            <VerticalLayout>
+                <HorizontalLayout height="25">
+                    <VerticalLayout width="350">
+                        <Control />
+                        <HorizontalLayout height="19" bkimage="file=&apos;hall/room/title_bg.png&apos; corner=&apos;6,6,6,6&apos;">
+                            <Control width="10" />
+                            <Control width="20" bkimage="file=&apos;hall/room/arrow.png&apos; aligncenter=&apos;true&apos;" />
+                            <Control width="5" />
+                            <Label name="roompanel-title_name" text="标题名xxx" width="100" textcolor="#FFFFFF00" font="1" />
+                            <Control />
+                        </HorizontalLayout>
+                        <Control />
+                    </VerticalLayout>
+                    <Control />
+                    <Button name="roompanel-setting_btn" width="60" bkimage="hall/room/setting.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;4,4,4,4&apos;" />
+                    <Control width="5" />
+                    <Button name="roompanel-join_btn" width="60" bkimage="hall/room/join.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;4,4,4,4&apos;" />
+                    <Control width="5" />
+                    <Button name="roompanel-back_btn" width="60" bkimage="hall/room/exit.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;4,4,4,4&apos;" />
+					<Control width="15" />
+				</HorizontalLayout>
+                <Container>
+                    <Control bkimage="file=&apos;hall/room/block.png&apos; corner=&apos;4,4,4,4&apos;" />
+                    <Container>
+                        <Control name="roompanel-bgblock" />
+                        <ControlGdiplus name="roompanel-bg" />
+                        <TileLayout name="roompanel-panel_1" vscrollbar="true" />
+                        <Container name="roompanel-panel_2" mouse="false" visible="false" />
+                    </Container>
+                </Container>
+                <Control height="5" />
+            </VerticalLayout>
+            <Control width="5" />
+        </HorizontalLayout>
+    </Container>
+</Window>

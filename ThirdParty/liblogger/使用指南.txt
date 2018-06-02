@@ -1,0 +1,34 @@
+1.包含头文件，头文件只能在cpp里面包含，不能在头文件里面包含。
+在初始化日志系统的cpp里面，需要包含：
+#include <liblogger/liblogger.h>
+#include <liblogger/file_logger.h>
+在使用的地方，只需要包含：
+#include <liblogger/liblogger.h>
+
+2.包含库文件，它为静态库。
+调试版的为
+#pragma comment(lib, "lib\\liblogger_d.lib")
+发行版的为
+#pragma comment(lib, "lib\\liblogger.lib")
+
+3.如何记录日志
+该库总共提供了以下方法用于写日志：
+LogTrace
+LogDebug
+LogInfo
+LogWarn
+LogError
+LogFatal
+LogFuncEntry
+LogFuncExit
+其中，LogFuncEntry()用于函数开始时候，LogFuncExit()用于函数结束的时候。
+其他的函数的使用方法跟MFC的TRACE一样，可以像这样使用：
+LogTrace("log id:%d", 1);
+
+4.如何关闭日志，调整日志级别。
+在头文件之前使用宏来调整，比如我现在只需要最低级的TRACE日志（即使用LogTrace写的日志），那么我们可以：
+#define LOG_LEVEL LOG_LEVEL_TRACE
+如要关闭所有的日志，则可以这样做：
+#define LOG_LEVEL LOG_LEVEL_DISABLED
+如果要打开所有的日志，则可以这样，调整日志的级别到最高级Fatal级：
+#define LOG_LEVEL LOG_LEVEL_FATAL

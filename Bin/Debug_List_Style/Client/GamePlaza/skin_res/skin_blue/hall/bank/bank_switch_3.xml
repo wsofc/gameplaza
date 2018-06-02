@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container>
+        <Label float="true" pos="26,20,0,0" width="111" height="101" bkimage="file=&apos;hall/bank/charm.png&apos; aligncenter=&apos;true&apos;" />
+        <Label text="魅力值：" float="true" pos="140,30,0,0" width="60" height="16" textcolor="#FF000001" font="1" />
+        <RichEdit name="bank-switch_3-edt_charms" text="0" float="true" pos="210,28,0,0" width="120" height="20" tab="true" inset="4,0,4,0" font="1" textcolor="#FFFF9000" maxchar="20" readonly="true" readonlyshowcaret="true" multiline="true" rich="true" />
+        <Label text="银行金币：" float="true" pos="140,62,0,0" width="60" height="16" textcolor="#FF000001" font="1" />
+        <RichEdit name="bank-switch_3-edt_deposit" text="0" float="true" pos="210,60,0,0" width="120" height="20" tab="true" inset="4,0,4,0" font="1" textcolor="#FFFF9000" maxchar="20" readonly="true" readonlyshowcaret="true" multiline="true" rich="true" />
+        <Label text="兑换魅力数目：" float="true" pos="27,140,0,0" width="100" height="22" textcolor="#FF000001" font="1" />
+        <RichEdit name="bank-switch_3-edt_ex_count" float="true" pos="130,140,0,0" width="200" height="22" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" textcolor="#FFFF0000" maxchar="4" canpaste="false" rich="true" autohscroll="true" textpadding="10,4,10,0" />
+        <Label text="最大魅力值(100魅力/次)" float="true" pos="156,178,0,0" width="162" height="16" textcolor="#FF000001" font="1" />
+        <Option name="bank-switch_3-opt" bordersize="1" float="true" pos="130,177,0,0" width="17" height="17" bkimage="common/blocks/option_bg_1.png" focusbordercolor="#FFFF0000" tab="true" selectedimage="common/blocks/option_sel_1.png" />
+        <Label text="取款密码确认：" float="true" pos="27,206,0,0" width="100" height="22" textcolor="#FF000001" font="1" />
+        <RichEdit name="bank-switch_3-edt_password" float="true" pos="130,206,0,0" width="200" height="22" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" textcolor="#FF000001" maxchar="20" canpaste="false" password="true" rich="true" autohscroll="true" textpadding="10,4,10,0" />
+        <Option name="bank-switch_3-opt_mark_pw" tooltip="勾选记住密码与否(仅限本次登录有效)" bordersize="1" float="true" pos="343,209,0,0" width="17" height="17" bkimage="common/blocks/option_bg_1.png" focusbordercolor="#FFFF0000" tab="true" selectedimage="common/blocks/option_sel_1.png" />
+        <Button name="bank-switch_3-ensure" text="确 定" bordersize="1" float="true" pos="150,240,0,0" width="85" height="30" focusbordercolor="#FFFF0000" tab="true" textcolor="#FF000001" font="1" normalimage="file=&apos;common/button/btn_03.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_03.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_03.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_03.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+        <Button name="bank-switch_3-refresh" text="刷 新" bordersize="1" float="true" pos="260,96,0,0" width="70" height="25" focusbordercolor="#FFFF0000" tab="true" textcolor="#FF000001" font="1" normalimage="file=&apos;common/button/btn_03.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_03.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_03.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_03.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+    </Container>
+</Window>

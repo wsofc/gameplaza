@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<HorizontalLayout>
+        <Control width="2" />
+        <VerticalLayout width="250">
+            <HorizontalLayout>
+                <Control width="2" />
+                <VerticalLayout>
+                    <Control height="2" />
+                    <Container name="hallmain-userinfo_panel" height="102" bkimage="file=&apos;common/blocks/block_01.png&apos; corner=&apos;6,6,6,6&apos;">
+                        <Container float="true" pos="6,8,0,0" width="64" height="64">
+                            <ControlGdiplus name="hallmain-head_icon_btn" bkimage="common/headPic/0.png" />
+							<ControlGdiplus name="hallmain-head_icon_box" bkimage="common/blocks/head_box.png" mouse="false" />
+                        </Container>
+                        <Text text="昵称：" float="true" pos="76,8,0,0" width="40" height="20" textpadding="2,4,2,0" textcolor="#FFFFFFFF" font="1" />
+                        <Text text="金币：" float="true" pos="76,30,0,0" width="40" height="20" textpadding="2,4,2,0" textcolor="#FFFFFFFF" font="1" />
+                        <Text text="I D:" float="true" pos="76,52,0,0" width="40" height="20" textpadding="2,4,2,0" textcolor="#FFFFFFFF" font="1" />
+                        <Text name="hallmain-nickname" text="帅哥" float="true" pos="120,8,0,0" width="120" height="20" textpadding="2,4,2,0" textcolor="#FFFFFFFF" font="1" endellipsis="true" />
+                        <Text name="hallmain-golds" text="0" float="true" pos="120,30,0,0" width="120" height="20" textpadding="2,4,2,0" textcolor="#FFFFFFFF" font="1" endellipsis="true" />
+                        <Label name="hallmain-member" float="true" pos="118,48,0,0" width="25" height="25" bkimage="file=&apos;common/list/member_0.png&apos; aligncenter=&apos;true&apos;" />
+                        <Text name="hallmain-id" text="0" float="true" pos="145,52,0,0" width="95" height="20" textpadding="2,4,2,0" textcolor="#FFFFFFFF" font="1" endellipsis="true" />
+                        <Label float="true" pos="10,73,0,0" width="25" height="25" bkimage="hall/icon_lv.png" textpadding="2,4,2,0" textcolor="#FFFF8000" font="1" />
+                        <Text name="hallmain-level" text="12345" float="true" pos="35,78,0,0" width="34" height="20" textpadding="2,4,2,0" textcolor="#FFFF8000" font="1" endellipsis="true" />
+						<Button name="hallmain-copyinfo_btn" text="复制ID" bordersize="1" float="true" pos="76,76,0,0" width="60" height="22" focusbordercolor="#FFFFFFFF" font="1" normalimage="file=&apos;common/button/btn_03.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_03.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_03.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_03.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+						<Button name="hallmain-userinfo_btn" text="个人中心" bordersize="1" float="true" pos="150,76,0,0" width="60" height="22" focusbordercolor="#FFFFFFFF" font="1" normalimage="file=&apos;common/button/btn_03.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_03.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_03.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_03.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+					</Container>
+					<HorizontalLayout bkimage="file=&apos;common/blocks/block_white.png&apos; corner=&apos;6,6,6,6&apos;">
+						<Control width="2" />
+						<VerticalLayout>
+							<Control height="2" />
+							<Label text="游 戏 列 表" height="25" padding="1,1,1,1" bkimage="file=&apos;common/list/hot.png&apos; corner=&apos;4,4,4,4&apos;" font="1" align="center" />
+							<Container name="hallmain-gamelist_node" />
+						</VerticalLayout>
+						<Control width="2" />
+					</HorizontalLayout>
+                </VerticalLayout>
+                <Control width="2" />
+            </HorizontalLayout>
+            <Control height="4" />
+        </VerticalLayout>
+        <Control width="2" />
+        <VerticalLayout>
+			<VerticalLayout height="31" bkimage="file=&apos;common/blocks/block_gray.png&apos; corner=&apos;6,6,6,6&apos;">
+				<Control />
+				<HorizontalLayout height="25">
+					<Control width="5" />
+					<Button name="hallmain-web_goback" width="52" bkimage="hall/web_goback.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+					<Control width="5" />
+					<Button name="hallmain-web_goforward" width="52" bkimage="hall/web_goforward.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+					<Control width="5" />
+					<Button name="hallmain-web_gostop" width="52" bkimage="hall/web_gostop.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+					<Control width="5" />
+					<Button name="hallmain-web_gorefresh" width="52" bkimage="hall/web_gorefresh.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+					<Control width="5" />
+					<Button name="hallmain-web_goofficial" width="52" bkimage="hall/web_goofficial.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;6,6,6,6&apos;" />
+					<Control width="5" />
+				</HorizontalLayout>
+				<Control />
+			</VerticalLayout>
+			<ActiveX name="hallmain-gameweb" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"/>
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

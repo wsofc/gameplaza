@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="563,282" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="12" bold="false" italic="false" />
+    <Container name="update_game-container" bkimage="file=&apos;common/blocks/dlg_block.png&apos; corner=&apos;10,40,10,10&apos;">
+        <Label text="游戏更新" float="true" pos="0,0,0,0" width="80" height="30" textpadding="10,0,0,0" textcolor="#FF000001" font="1" />
+        <Label text="任务名称" float="true" pos="25,34,0,0" width="60" height="20" textcolor="#FF000001" font="1" />
+        <Label text="进度" float="true" pos="155,34,0,0" width="60" height="20" textcolor="#FF000001" font="1" />
+        <Label text="大小（MB）" float="true" pos="262,34,0,0" width="80" height="20" textcolor="#FF000001" font="1" />
+        <Label text="状态" float="true" pos="391,34,0,0" width="60" height="20" textcolor="#FF000001" font="1" />
+        <Label text="速度（KB/s）" float="true" pos="471,34,0,0" width="80" height="20" textcolor="#FF000001" font="1" />
+        <Button name="update_game-btn_download" text="官方下载" float="true" pos="395,250,0,0" width="66" height="18" textcolor="#FF0000FF" font="0" pushedtextcolor="#FF00ECD9" hottextcolor="#FF000001" />
+        <Button name="update_game-btn_cancel" text="取消下载" float="true" pos="475,250,0,0" width="66" height="18" textcolor="#FF0000FF" font="0" pushedtextcolor="#FF00ECD9" hottextcolor="#FF000001" />
+        <Button name="update_game-btn_close" float="true" pos="515,2,0,0" width="43" height="26" focusbordercolor="#FF0000FF" tab="true" align="center" normalimage="file=&apos;common/button/close.png&apos; source=&apos;0,0,43,26&apos;" hotimage="file=&apos;common/button/close.png&apos; source=&apos;43,0,86,26&apos;" pushedimage="file=&apos;common/button/close.png&apos; source=&apos;86,0,129,26&apos;" disabledimage="file=&apos;common/button/close.png&apos; source=&apos;129,0,172,26&apos;" />
+    </Container>
+</Window>

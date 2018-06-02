@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="784,548">
+	<Container>
+		<Control name="roompanel-bgblock" />
+		<VerticalLayout>
+			<HorizontalLayout height="30" bkimage="file=&apos;common/blocks/block_02.png&apos; corner=&apos;20,10,20,10&apos;">
+				<Control width="10" />
+				<Label name="roompanel-title_name" text="标题名xxx" width="100" textcolor="#FFFFFF00" font="1" />
+				<Control />
+				<VerticalLayout width="230">
+					<Control />
+					<HorizontalLayout height="26">
+						<Button name="roompanel-setting_btn" float="true" pos="0,0,0,0" width="70" height="26" normalimage="file=&apos;common/button/btn_04_01.png&apos; corner=&apos;10,6,10,6&apos;" hotimage="file=&apos;common/button/btn_04_02.png&apos; corner=&apos;10,6,10,6&apos;" pushedimage="file=&apos;common/button/btn_04_03.png&apos; corner=&apos;10,6,10,6&apos;" foreimage="file=&apos;common/text/034.png&apos; aligncenter=&apos;true&apos;" />
+						<Button name="roompanel-join_btn" float="true" pos="80,0,0,0" width="70" height="26" normalimage="file=&apos;common/button/btn_04_01.png&apos; corner=&apos;10,6,10,6&apos;" hotimage="file=&apos;common/button/btn_04_02.png&apos; corner=&apos;10,6,10,6&apos;" pushedimage="file=&apos;common/button/btn_04_03.png&apos; corner=&apos;10,6,10,6&apos;" foreimage="file=&apos;common/text/035.png&apos; aligncenter=&apos;true&apos;" />
+						<Button name="roompanel-back_btn" float="true" pos="160,0,0,0" width="70" height="26" normalimage="file=&apos;common/button/btn_04_01.png&apos; corner=&apos;10,6,10,6&apos;" hotimage="file=&apos;common/button/btn_04_02.png&apos; corner=&apos;10,6,10,6&apos;" pushedimage="file=&apos;common/button/btn_04_03.png&apos; corner=&apos;10,6,10,6&apos;" foreimage="file=&apos;common/text/036.png&apos; aligncenter=&apos;true&apos;" />
+					</HorizontalLayout>
+					<Control />
+				</VerticalLayout>
+				<Control width="10" />
+			</HorizontalLayout>
+			<Container>
+				<ControlGdiplus name="roompanel-bg" />
+				<TileLayout name="roompanel-panel_1" vscrollbar="true" />
+				<Container name="roompanel-panel_2" mouse="false" visible="false" />
+			</Container>
+		</VerticalLayout>
+	</Container>
+</Window>

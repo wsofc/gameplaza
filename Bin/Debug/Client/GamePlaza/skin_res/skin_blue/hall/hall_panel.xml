@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="784,548">
+    <HorizontalLayout>
+        <HorizontalLayout width="160" bkimage="hall/bg_left.jpg">
+            <Control />
+			<VerticalLayout width="156">
+				<Control height="5" />
+				<VerticalLayout name="hallpanel-opts" />
+			</VerticalLayout>
+            <Control />
+        </HorizontalLayout>
+		<HorizontalLayout>
+			<TabLayout name="hallpanel-switch" />
+		</HorizontalLayout>
+    </HorizontalLayout>
+</Window>

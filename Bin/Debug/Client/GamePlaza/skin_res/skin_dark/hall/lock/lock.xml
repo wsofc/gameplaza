@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="460,246" caption="0,0,0,45" bktrans="true">
+    <Font id="0" name="幼圆" size="16" bold="true" italic="false" />
+    <Font id="1" name="幼圆" size="18" bold="true" italic="false" />
+    <Font id="2" name="粗体" size="16" bold="true" italic="false" />
+    <Font id="3" name="幼圆" size="14" bold="true" italic="false" />
+    <Font id="4" name="粗体" size="14" bold="true" italic="false" />
+    <Font id="5" name="幼圆" size="13" bold="true" italic="false" />
+    <Container bkimage="hall/lock/lock_bg.png">
+        <Label text="银行密码:" float="true" pos="40,69,0,0" width="80" height="30" textcolor="#FFFFFFFF" font="0" />
+        <Label text="点击&quot;锁机&quot;锁定" float="true" pos="40,121,0,0" width="117" height="30" textcolor="#FFFFFFFF" font="0" />
+        <Label text="锁定机器" float="true" pos="193,5,0,0" width="75" height="30" textcolor="#FFFFFFFF" font="0" />
+        <RichEdit name="lock-edt_pw" float="true" pos="128,68,0,0" width="280" height="32" tab="true" font="2" textcolor="#FF000000" maxchar="20" password="true" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="16,8,16,8" />
+        <Button name="lock-btn_lock" bordersize="1" float="true" pos="40,172,0,0" width="108" height="40" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_08_01.png&apos; corner=&apos;4,4,4,4&apos;" hotimage="file=&apos;common/button/btn_08_02.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_08_03.png&apos; corner=&apos;4,4,4,4&apos;" foreimage="file=&apos;hall/lock/txt_lock.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="lock-btn_unlock" bordersize="1" float="true" pos="176,172,0,0" width="108" height="40" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_08_01.png&apos; corner=&apos;4,4,4,4&apos;" hotimage="file=&apos;common/button/btn_08_02.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_08_03.png&apos; corner=&apos;4,4,4,4&apos;" foreimage="file=&apos;hall/lock/txt_unlock.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="lock-btn_cancel" bordersize="1" float="true" pos="312,172,0,0" width="108" height="40" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_08_01.png&apos; corner=&apos;4,4,4,4&apos;" hotimage="file=&apos;common/button/btn_08_02.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_08_03.png&apos; corner=&apos;4,4,4,4&apos;" foreimage="file=&apos;hall/lock/txt_cancel.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="lock-btn_close" bordersize="1" float="true" pos="393,8,0,0" width="44" height="24" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,72,44,96&apos;" />
+    </Container>
+</Window>

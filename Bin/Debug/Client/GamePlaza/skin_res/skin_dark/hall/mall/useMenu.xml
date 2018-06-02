@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+	<Font name="宋体" size="12" bold="false" default="true" />
+	
+	<!-- Menu标签的属性要通过Default来定义，为了让下级菜单也能拥有同样的外观 -->
+	<Default name="Menu" value="bordersize=&quot;1&quot; borderround=&quot;2,2&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;10,0,0,0&quot; itemtextcolor=&quot;0xFFFFFFFF&quot; bkimage=&quot;file='common/blocks/block_black.png' corner='4,4,4,4'&quot; itemselectedbkcolor=&quot;0x994E649D&quot; itemdisabledbkcolor=&quot;0x7F7A7A7A&quot;" />
+	
+	<Menu>
+		<MenuElement name="usemenu-use" text="使用"  />
+		<MenuElement name="usemenu-give" text="赠送" />
+	</Menu>
+</Window>

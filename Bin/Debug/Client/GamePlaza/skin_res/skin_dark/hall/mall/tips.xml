@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,140" bktrans="true">
+    <Font id="0" name="宋体" size="10" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="12" bold="false" italic="false" />
+    <Font id="2" name="宋体" size="14" bold="false" italic="false" />
+    <Container bkimage="file=&apos;common/blocks/block_black.png&apos; corner=&apos;6,6,6,6&apos;">
+        <Text name="mall_goods-txt_name" text="道具名" float="true" pos="9,5,0,0" width="382" height="20" textpadding="2,2,2,2" textcolor="#FF007CFF" font="2" endellipsis="true" />
+        <Label name="mall_goods-lab_icon" float="true" pos="9,27,0,0" width="65" height="65" bkimage="file=&apos;hall/mall/goods_purple.png&apos; aligncenter=&apos;true&apos;" />
+        <Text name="mall_goods-txt_desc" text="道具描述" float="true" pos="9,94,0,0" width="382" height="20" textpadding="2,2,2,2" textcolor="#FF00FF00" font="2" endellipsis="true" />
+        <Text name="mall_goods-txt_price" text="购买单价：" float="true" pos="9,114,0,0" width="382" height="20" textpadding="2,2,2,2" textcolor="#FFFFFF00" font="2" endellipsis="true" />
+    </Container>
+</Window>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\share">
+      <UniqueIdentifier>{f352a385-aad9-41be-9551-f5a32c77401e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\share">
+      <UniqueIdentifier>{6f3ae076-17fe-44e3-a910-b851bf2af6dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data">
+      <UniqueIdentifier>{92630c4c-c0af-4872-a524-bbbf989da17d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data">
+      <UniqueIdentifier>{a532537f-0010-43c3-b0cd-f347a44fad63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\share\ui">
+      <UniqueIdentifier>{453db798-658c-4486-a2b6-6ca323f5c1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\share\ui">
+      <UniqueIdentifier>{6e7bf8d1-4345-4c1b-adb1-8b0f0f9c17fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util">
+      <UniqueIdentifier>{e213fe79-ade4-457c-9d56-ed88f77d5f1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\util">
+      <UniqueIdentifier>{fb0d7ea6-72ae-49f9-ad4a-779e6c88f8f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThirdParty">
+      <UniqueIdentifier>{5878376d-e5a3-4c05-8f42-a46b631835ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThirdParty\vc-logge">
+      <UniqueIdentifier>{eef01365-c4c7-4d9d-bc2c-c55c00bb1cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\share\control">
+      <UniqueIdentifier>{cdce11b2-c2d0-40a7-b603-08ca39a9d9e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\numberConvert.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\stringConvertor.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\wndTimmer.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\define.h">
+      <Filter>源文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\jsonFile.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="Unreal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GamePlaza\data\dataManager.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GamePlaza\data\serviceData.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GamePlaza\data\userData.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\ui\UIDialogFrame.h">
+      <Filter>头文件\share\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GamePlaza\util\gameResource.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\vc-logge\DynamicLogger.h">
+      <Filter>头文件\ThirdParty\vc-logge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\vc-logge\Logger.h">
+      <Filter>头文件\ThirdParty\vc-logge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\vc-logge\StaticLogger.h">
+      <Filter>头文件\ThirdParty\vc-logge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\control\IUnrealControl.h">
+      <Filter>头文件\share\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\ui\UIControlGdiplus.h">
+      <Filter>头文件\share\ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\numberConvert.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\stringConvertor.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\wndTimmer.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\jsonFile.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="Unreal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GamePlaza\data\dataManager.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GamePlaza\data\serviceData.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GamePlaza\data\userData.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\ui\UIDialogFrame.cpp">
+      <Filter>源文件\share\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GamePlaza\util\gameResource.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\ui\UIControlGdiplus.cpp">
+      <Filter>源文件\share\ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

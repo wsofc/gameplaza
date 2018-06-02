@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="638,458" caption="0,0,0,65" bktrans="true">
+    <Font id="0" name="宋体" size="13" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="15" bold="false" italic="false" />
+    <Font id="2" name="宋体" size="20" bold="true" italic="false" />
+    <Container bkimage="login/bg.png">
+        <Button name="login-official_web_btn" bordersize="1" float="true" pos="161,12,0,0" width="46" height="46" focusbordercolor="#FFFFFFFF" tab="true" align="center" hotimage="login/icon_hot.png" pushedimage="login/icon_push.png" foreimage="login/icon_official_web.png" />
+        <Button name="login-recharge_btn" bordersize="1" float="true" pos="251,12,0,0" width="46" height="46" focusbordercolor="#FFFFFFFF" tab="true" align="center" hotimage="login/icon_hot.png" pushedimage="login/icon_push.png" foreimage="login/icon_recharge.png" />
+        <Button name="login-custom_service_btn" bordersize="1" float="true" pos="341,12,0,0" width="46" height="46" focusbordercolor="#FFFFFFFF" tab="true" align="center" hotimage="login/icon_hot.png" pushedimage="login/icon_push.png" foreimage="login/icon_customer_ service.png" />
+        <Button name="login-feedback_btn" bordersize="1" float="true" pos="431,12,0,0" width="46" height="46" focusbordercolor="#FFFFFFFF" tab="true" align="center" hotimage="login/icon_hot.png" pushedimage="login/icon_push.png" foreimage="login/icon_feedback.png" />
+        <Button name="login-min_btn" bordersize="1" float="true" pos="555,17,0,0" width="27" height="27" focusbordercolor="#FFFFFFFF" tab="true" align="center" normalimage="common/button/btn_min_normal.png" hotimage="common/button/btn_min_hot.png" pushedimage="common/button/btn_min_down.png" />
+        <Button name="login-close_btn" bordersize="1" float="true" pos="592,17,0,0" width="27" height="27" focusbordercolor="#FFFFFFFF" tab="true" align="center" normalimage="common/button/btn_close_normal.png" hotimage="common/button/btn_close_hot.png" pushedimage="common/button/btn_close_down.png" />
+        <Label text="账号" float="true" pos="61,355,0,0" width="41" height="21" textcolor="#FFFFFFFF" font="2" />
+        <Label text="密码" float="true" pos="61,399,0,0" width="41" height="21" textcolor="#FFFFFFFF" font="2" />
+        <WkeWebkit float="true" name="login-bgweb" parentname="ContainerUI1" pos="6,67,630,331" />
+        <Container float="true" pos="115,352,0,0" width="290" height="30" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;26,5,26,5&apos;">
+            <Combo name="login-accountcombo" float="true" pos="15,0,0,0" width="260" height="32" itemfont="1" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#99338ACA" itemhottextcolor="#FF000000" itemhotbkcolor="#FFC1E3FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file=&apos;common/button/combo_02_01.png&apos; corner=&apos;26,10,40,10&apos;" hotimage="file=&apos;common/button/combo_02_02.png&apos; corner=&apos;26,10,40,10&apos;" pushedimage="file=&apos;common/button/combo_02_03.png&apos; corner=&apos;26,10,40,10&apos;" dropboxsize="255,150" />
+            <RichEdit name="login-account" float="true" pos="0,0,0,0" width="242" height="32" tab="true" font="2" textcolor="#FF000000" maxchar="20" autohscroll="true" textpadding="15,5,0,5" />
+        </Container>
+        <RichEdit name="login-password" float="true" pos="115,394,0,0" width="290" height="30" tab="true" font="2" textcolor="#FF000000" maxchar="20" password="true" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,5,84,5" />
+        <Button name="login-retrieve_btn" bordersize="1" float="true" pos="328,401,0,0" width="61" height="17" focusbordercolor="#FF0000FF" tab="true" normalimage="login/btn_pw_01.png" hotimage="login/btn_pw_02.png" pushedimage="login/btn_pw_03.png" />
+        <Option name="login-check" bordersize="1" float="true" pos="127,429,0,0" width="20" height="20" bkimage="common/blocks/option_bg_1.png" focusbordercolor="#FFFFFFFF" tab="true" selectedimage="common/blocks/option_sel_1.png" />
+        <Label text="记住密码" float="true" pos="147,430,0,0" width="80" height="20" textcolor="#FFFFFBF0" font="1" align="center" />
+        <Button name="login-unbind_btn" text="解绑定" bordersize="1" float="true" pos="235,430,0,0" width="80" height="20" focusbordercolor="#FFFFFBF0" tab="true" textcolor="#FFFFFBF0" font="1" align="center" pushedtextcolor="#FFFF0000" hottextcolor="#FF00C0FF" />
+        <Button name="login-regist_btn" text="账号注册" bordersize="1" float="true" pos="320,431,0,0" width="80" height="20" focusbordercolor="#FFFFFFFF" tab="true" textcolor="#FFFFFBF0" font="1" pushedtextcolor="#FFFF0000" hottextcolor="#FF00C0FF" />
+        <Button name="login-login_btn" bordersize="1" float="true" pos="428,348,0,0" width="159" height="68" focusbordercolor="#FFFFFFFF" tab="true" normalimage="login/login_btn_01.png" hotimage="login/login_btn_02.png" pushedimage="login/login_btn_03.png" foreimage="file=&apos;login/icon_login.png&apos; aligncenter=&apos;true&apos;" />
+        <Label float="true" pos="30,21,0,0" width="108" height="30" bkimage="common/title/logo_01.png" />
+        <Label name="login-version" text=" 版本号: v1.0.0.1" float="true" pos="428,424,0,0" width="159" height="20" textpadding="2,0,2,0" textcolor="#FFFFFFFF" font="0" align="center" />
+        <Label name="login-waitting" float="true" pos="116,335,0,0" width="285" height="16" textpadding="2,0,2,0" textcolor="#FFFFFFFF" />
+        <Control name="waitting-fade_layer" visible="false" float="true" pos="0,65,0,0" width="638" height="393" />
+    </Container>
+</Window>

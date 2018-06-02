@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container>
+        <VerticalLayout>
+            <Control />
+            <HorizontalLayout height="60">
+                <Control />
+                <Button name="roompanel-enter_btn" width="200" normalimage="file=&apos;common/button/btn_04.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_04.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_04.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_04.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" foreimage="enter_txt.png" />
+                <Control width="20" />
+            </HorizontalLayout>
+            <Control height="10" />
+        </VerticalLayout>
+    </Container>
+</Window>

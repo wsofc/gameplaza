@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container width="563" height="25">
+        <Label name="task_item-name" text="未知游戏" float="true" pos="22,0,0,0" width="80" height="25" textcolor="#FF000001" font="0" align="vcenter" endellipsis="true" />
+        <Progress name="task_item-progress" float="true" pos="110,0,0,0" width="122" height="25" bkimage="file=&apos;common/blocks/progress_bg_2.png&apos; corner=&apos;4,4,4,4&apos;" foreimage="file=&apos;common/blocks/progress_fg_2.png&apos; corner=&apos;4,4,4,4&apos;" min="0" max="100" value="0" hor="true" isstretchfore="false" />
+        <Label name="task_item-percent" text="0%" float="true" pos="140,0,0,0" width="60" height="25" textcolor="#FF000001" font="0" align="center" />
+        <Label name="task_item-size" text="00.00MB/00.00MB" float="true" pos="232,0,0,0" width="130" height="25" textpadding="2,0,0,2" textcolor="#FFFF0000" font="0" align="center" />
+        <Label name="task_item-status" text="正在下载" float="true" pos="389,0,0,0" width="73" height="25" textpadding="2,0,0,2" textcolor="#FFFF0000" font="0" />
+        <Button name="task_item-cancel" float="true" pos="362,0,0,0" width="27" height="24" normalimage="file=&apos;update/delete.png&apos; source=&apos;0,0,27,27&apos;" hotimage="file=&apos;update/delete.png&apos; source=&apos;27,0,54,27&apos;" pushedimage="file=&apos;update/delete.png&apos; source=&apos;54,0,81,27&apos;" />
+        <Label name="task_item-speed" text="- /s" float="true" pos="462,0,0,0" width="80" height="25" textcolor="#FFFF0000" font="0" align="center" />
+    </Container>
+</Window>

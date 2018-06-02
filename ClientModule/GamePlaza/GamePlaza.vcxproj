@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_List_Style|Win32">
+      <Configuration>Debug_List_Style</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_List_Style|Win32">
+      <Configuration>Release_List_Style</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77DA0F4B-3E30-4913-A4DF-46E5550F3719}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyGamePlaza</RootNamespace>
+    <ProjectName>GamePlaza</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_List_Style|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_List_Style|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_List_Style|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_List_Style|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\\..\\Bin\\Debug\\Client</OutDir>
+    <IntDir>Build\\$(Configuration)\\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_List_Style|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\\..\\Bin\\Debug_List_Style\\Client</OutDir>
+    <IntDir>Build\\$(Configuration)\\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\\..\\Bin\\Release\\Client</OutDir>
+    <IntDir>Build\\$(Configuration)\\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_List_Style|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\\..\\Bin\\Release_List_Style\\Client</OutDir>
+    <IntDir>Build\\$(Configuration)\\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\\..\\;..\\..\\PublicHeader;..\\..\\PublicHeader\\GlobalDef;..\\..\\PublicHeader\\Network;..\\..\\ShareModule;..\\..\\ShareModule\\BaseModule;..\\..\\ShareModule\\NetModule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\PublicLibrary\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>..\\..\\Bin\\Debug\\Client\\GamePlaza.exe</OutputFile>
+      <AdditionalDependencies>Nafxcwd.lib;Libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib;Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_List_Style|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\\..\\;..\\..\\PublicHeader;..\\..\\PublicHeader\\GlobalDef;..\\..\\PublicHeader\\Network;..\\..\\ShareModule;..\\..\\ShareModule\\BaseModule;..\\..\\ShareModule\\NetModule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\..\PublicLibrary\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>..\\..\\Bin\\Debug_List_Style\\Client\\GamePlaza.exe</OutputFile>
+      <AdditionalDependencies>Nafxcwd.lib;Libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>Nafxcwd.lib;Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\\..\\;..\\..\\PublicHeader;..\\..\\PublicHeader\\GlobalDef;..\\..\\PublicHeader\\Network;..\\..\\ShareModule;..\\..\\ShareModule\\BaseModule;..\\..\\ShareModule\\NetModule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>..\\..\\Bin\\Release\\Client\\GamePlaza.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\\..\\PublicLibrary\\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Nafxcw.lib;Libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>Nafxcw.lib;Libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <PostBuildEvent>
+      <Command>rd /q /s ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza
+xcopy /i /e /h /y ..\\..\\Bin\\Debug\\Client\\GamePlaza ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza
+rd /q /s ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza\\data\\user
+rd /q /s ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza\\skin_res</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_List_Style|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;ZLIB_WINAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\\..\\;..\\..\\PublicHeader;..\\..\\PublicHeader\\GlobalDef;..\\..\\PublicHeader\\Network;..\\..\\ShareModule;..\\..\\ShareModule\\BaseModule;..\\..\\ShareModule\\NetModule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>..\\..\\Bin\\Release_List_Style\\Client\\GamePlaza.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\\..\\PublicLibrary\\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>Build\\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>Nafxcw.lib;Libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>Nafxcw.lib;Libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <PostBuildEvent>
+      <Command>rd /q /s ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza
+xcopy /i /e /h /y ..\\..\\Bin\\Debug_List_Style\\Client\\GamePlaza ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza
+rd /q /s ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza\\data\\user
+rd /q /s ..\\..\\Bin\\$(ConfigurationName)\\Client\\GamePlaza\\skin_res</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="res\SensitiveVocabulary.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\PublicHeader\Array.h" />
+    <ClInclude Include="..\..\PublicHeader\BaseHeader.h" />
+    <ClInclude Include="..\..\PublicHeader\BasicTypes.h" />
+    <ClInclude Include="..\..\PublicHeader\Factory.h" />
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalDef.h" />
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalField.h" />
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalFrame.h" />
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalIpc.h" />
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalProperty.h" />
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalRight.h" />
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalSocket.h" />
+    <ClInclude Include="..\..\PublicHeader\Macro.h" />
+    <ClInclude Include="..\..\PublicHeader\Module.h" />
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_CenterServer.h" />
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_DatabaseServer.h" />
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_GameServer.h" />
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_HallServer.h" />
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_LogonServer.h" />
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_MatchGameServer.h" />
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_Video.h" />
+    <ClInclude Include="..\..\PublicHeader\Platform.h" />
+    <ClInclude Include="..\..\PublicHeader\Public.h" />
+    <ClInclude Include="..\..\PublicHeader\SafeDelete.h" />
+    <ClInclude Include="..\..\PublicHeader\ServerPublic.h" />
+    <ClInclude Include="..\..\PublicHeader\Singleton.h" />
+    <ClInclude Include="..\..\PublicHeader\StdHeaders.h" />
+    <ClInclude Include="..\..\PublicHeader\Template.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\BaseModule.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\BaseUtility.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\CmdLine.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\CSLock.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\DataQueue.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\Encrypt.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\FileSizeFormat.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\FunctionTrace.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\IniFile.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\IPAddress.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\MiniDump.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\ServiceThread.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\ShareMem.h" />
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\WinFileInfo.h" />
+    <ClInclude Include="..\..\ShareModule\NetModule\include\NetModule.h" />
+    <ClInclude Include="..\..\ShareModule\NetModule\include\NetPacketParserXorMap.h" />
+    <ClInclude Include="..\..\ThirdParty\imageOle\IImageOle.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\allocator.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\assertions.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\autolink.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\config.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\features.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\forwards.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\json.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\reader.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\value.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\version.h" />
+    <ClInclude Include="..\..\ThirdParty\json\include\json\writer.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curl.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curlbuild.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curlrules.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curlver.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\easy.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\mprintf.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\multi.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\stdcheaders.h" />
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="..\..\ThirdParty\sms\FYOpenApi.h" />
+    <ClInclude Include="..\..\ThirdParty\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\ThirdParty\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\..\ThirdParty\vc-logge\DynamicLogger.h" />
+    <ClInclude Include="..\..\ThirdParty\vc-logge\Logger.h" />
+    <ClInclude Include="..\..\ThirdParty\vc-logge\StaticLogger.h" />
+    <ClInclude Include="..\..\ThirdParty\wke\wke.h" />
+    <ClInclude Include="..\..\ThirdParty\zlib\ioapi.h" />
+    <ClInclude Include="..\..\ThirdParty\zlib\mztools.h" />
+    <ClInclude Include="..\..\ThirdParty\zlib\unzip.h" />
+    <ClInclude Include="..\..\ThirdParty\zlib\zconf.h" />
+    <ClInclude Include="..\..\ThirdParty\zlib\zip.h" />
+    <ClInclude Include="..\..\ThirdParty\zlib\zlib.h" />
+    <ClInclude Include="..\share\control\IUnrealControl.h" />
+    <ClInclude Include="..\share\control\IUserControl.h" />
+    <ClInclude Include="..\share\define.h" />
+    <ClInclude Include="..\share\jsonFile.h" />
+    <ClInclude Include="..\share\libcurlDownloader.h" />
+    <ClInclude Include="..\share\numberConvert.h" />
+    <ClInclude Include="..\share\smsConfig.h" />
+    <ClInclude Include="..\share\stringConvertor.h" />
+    <ClInclude Include="..\share\ui\UIControlGdiplus.h" />
+    <ClInclude Include="..\share\ui\UIDialogFrame.h" />
+    <ClInclude Include="..\share\wndTimmer.h" />
+    <ClInclude Include="..\share\ui\UIMenu.h" />
+    <ClInclude Include="..\share\ui\UIScreenshotBox.h" />
+    <ClInclude Include="..\share\ui\UIWkeWebkit.h" />
+    <ClInclude Include="..\share\unicodemsxml.h" />
+    <ClInclude Include="..\share\zlibUtil.h" />
+    <ClInclude Include="data\dataManager.h" />
+    <ClInclude Include="data\serverList.h" />
+    <ClInclude Include="data\serviceData.h" />
+    <ClInclude Include="data\userData.h" />
+    <ClInclude Include="face\UIFaceSel.h" />
+    <ClInclude Include="face\faceSelList.h" />
+    <ClInclude Include="face\faceSelFrame.h" />
+    <ClInclude Include="hall\activity.h" />
+    <ClInclude Include="hall\bank.h" />
+    <ClInclude Include="hall\doleFrame.h" />
+    <ClInclude Include="hall\exitFrame.h" />
+    <ClInclude Include="hall\hallFrame.h" />
+    <ClInclude Include="hall\infoFrame.h" />
+    <ClInclude Include="hall\loadingFrame.h" />
+    <ClInclude Include="hall\lockFrame.h" />
+    <ClInclude Include="hall\loginFrame.h" />
+    <ClInclude Include="hall\mall.h" />
+    <ClInclude Include="hall\passwordFrame.h" />
+    <ClInclude Include="hall\registFrame.h" />
+    <ClInclude Include="hall\signFrame.h" />
+    <ClInclude Include="ipc\gameServer.h" />
+    <ClInclude Include="ipc\ipc.h" />
+    <ClInclude Include="ipc\loginServer.h" />
+    <ClInclude Include="ipc\serverBase.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="room\downloadFrame.h" />
+    <ClInclude Include="room\room.h" />
+    <ClInclude Include="room\roomManager.h" />
+    <ClInclude Include="room\table.h" />
+    <ClInclude Include="room\tableManager.h" />
+    <ClInclude Include="room\unrealControl.h" />
+    <ClInclude Include="room\userControl.h" />
+    <ClInclude Include="room\userList.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ui\UIBagItem.h" />
+    <ClInclude Include="ui\UIGameItem.h" />
+    <ClInclude Include="util\gameResource.h" />
+    <ClInclude Include="util\gameUtil.h" />
+    <ClInclude Include="util\gifImage.h" />
+    <ClInclude Include="util\richEditUtil.h" />
+    <ClInclude Include="util\trayMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\share\jsonFile.cpp" />
+    <ClCompile Include="..\share\libcurlDownloader.cpp" />
+    <ClCompile Include="..\share\numberConvert.cpp" />
+    <ClCompile Include="..\share\smsConfig.cpp" />
+    <ClCompile Include="..\share\stringConvertor.cpp" />
+    <ClCompile Include="..\share\ui\UIControlGdiplus.cpp" />
+    <ClCompile Include="..\share\ui\UIDialogFrame.cpp" />
+    <ClCompile Include="..\share\wndTimmer.cpp" />
+    <ClCompile Include="..\share\ui\UIMenu.cpp" />
+    <ClCompile Include="..\share\ui\UIScreenshotBox.cpp" />
+    <ClCompile Include="..\share\ui\UIWkeWebkit.cpp" />
+    <ClCompile Include="..\share\unicodemsxml.cpp" />
+    <ClCompile Include="..\share\zlibUtil.cpp" />
+    <ClCompile Include="data\dataManager.cpp" />
+    <ClCompile Include="data\serverList.cpp" />
+    <ClCompile Include="data\serviceData.cpp" />
+    <ClCompile Include="data\userData.cpp" />
+    <ClCompile Include="face\UIFaceSel.cpp" />
+    <ClCompile Include="face\faceSelList.cpp" />
+    <ClCompile Include="face\faceSelFrame.cpp" />
+    <ClCompile Include="hall\activity.cpp" />
+    <ClCompile Include="hall\bank.cpp" />
+    <ClCompile Include="hall\doleFrame.cpp" />
+    <ClCompile Include="hall\exitFrame.cpp" />
+    <ClCompile Include="hall\hallFrame.cpp" />
+    <ClCompile Include="hall\infoFrame.cpp" />
+    <ClCompile Include="hall\loadingFrame.cpp" />
+    <ClCompile Include="hall\lockFrame.cpp" />
+    <ClCompile Include="hall\loginFrame.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_List_Style|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hall\mall.cpp" />
+    <ClCompile Include="hall\passwordFrame.cpp" />
+    <ClCompile Include="hall\registFrame.cpp" />
+    <ClCompile Include="hall\signFrame.cpp" />
+    <ClCompile Include="ipc\gameServer.cpp" />
+    <ClCompile Include="ipc\ipc.cpp" />
+    <ClCompile Include="ipc\loginServe.cpp" />
+    <ClCompile Include="ipc\serverBase.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="room\downloadFrame.cpp" />
+    <ClCompile Include="room\room.cpp" />
+    <ClCompile Include="room\roomManager.cpp" />
+    <ClCompile Include="room\table.cpp" />
+    <ClCompile Include="room\tableManager.cpp" />
+    <ClCompile Include="room\unrealControl.cpp" />
+    <ClCompile Include="room\userControl.cpp" />
+    <ClCompile Include="room\userList.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_List_Style|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_List_Style|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ui\UIBagItem.cpp" />
+    <ClCompile Include="ui\UIGameItem.cpp" />
+    <ClCompile Include="util\gameResource.cpp" />
+    <ClCompile Include="util\gameUtil.cpp" />
+    <ClCompile Include="util\gifImage.cpp" />
+    <ClCompile Include="util\richEditUtil.cpp" />
+    <ClCompile Include="util\trayMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePlaza.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="GamePlaza.ico" />
+    <Image Include="Icon.ico" />
+    <Image Include="small.ico" />
+    <Image Include="tray.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

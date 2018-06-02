@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="头文件\hall">
+      <UniqueIdentifier>{082721e1-7157-409e-8e21-70a61faea565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hall">
+      <UniqueIdentifier>{445d597a-1ec2-4782-8598-22245d9b0630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util">
+      <UniqueIdentifier>{5a25a6ff-c922-4b81-977e-2c8f8711d30a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\util">
+      <UniqueIdentifier>{ea32f709-68d9-4da9-b99b-928d12fc2cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ui">
+      <UniqueIdentifier>{a0733885-f0d8-4ebb-b639-14b3119c0272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ui">
+      <UniqueIdentifier>{aa0d8bfd-c58a-4bf7-8f9f-e556aeb3b239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data">
+      <UniqueIdentifier>{f098a0ec-bb05-4c72-b6eb-2101b6295421}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data">
+      <UniqueIdentifier>{4b776c35-3031-44b7-a554-2c5543ab846e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\room">
+      <UniqueIdentifier>{62862e70-4cf4-457f-b03e-9bd92322ae32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\room">
+      <UniqueIdentifier>{fc18aef4-bc2b-4494-89eb-b608403b3957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\face">
+      <UniqueIdentifier>{8d7010ca-a234-4bfa-9358-6e79c057d4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\face">
+      <UniqueIdentifier>{08ffffa1-91b6-4a42-8e45-fbfa0d8c5bb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ipc">
+      <UniqueIdentifier>{b92a65cb-5298-4f63-9c81-dccdfac02ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ipc">
+      <UniqueIdentifier>{07dd27b3-5f67-4474-8eb8-6d1408de0ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\PublicHeader">
+      <UniqueIdentifier>{a5e0f645-99e4-4376-8efa-bbab3478d861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\PublicHeader\GlobalDef">
+      <UniqueIdentifier>{5cb7fc86-6d34-44db-b8cf-29368a2e257f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\PublicHeader\Network">
+      <UniqueIdentifier>{6deb675c-37eb-42f5-aae2-73be62cba165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ShareModule">
+      <UniqueIdentifier>{71048f0d-9272-4d20-86df-cea1720ccdd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ShareModule\BaseModule">
+      <UniqueIdentifier>{fdfbebe4-1039-414b-a969-d1979d2cb79c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ShareModule\NetModule">
+      <UniqueIdentifier>{46903d0a-9abc-45db-ac63-c0314c86d64f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ShareModule\BaseModule\include">
+      <UniqueIdentifier>{afbed7b9-3653-4a93-b9e8-0bef536b830f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ShareModule\NetModule\include">
+      <UniqueIdentifier>{c0c62780-f584-4ba6-99fb-2737729992b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{c43a1e02-0dc2-4947-849b-757625c7bc58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\tinyxml">
+      <UniqueIdentifier>{28b080af-13e6-4dc8-9c5f-ee33ecf661bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\wke">
+      <UniqueIdentifier>{002a7e73-ecf3-4382-9a77-fd53edf1c596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\imageOle">
+      <UniqueIdentifier>{c55f02dd-4b0f-491a-ab32-b75642026efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\sms">
+      <UniqueIdentifier>{7bcfdcf4-24c4-434d-86bf-c28680b80363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\libcurl">
+      <UniqueIdentifier>{7885ab0c-92c5-4f15-8a0a-48ff76fafee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\zlip">
+      <UniqueIdentifier>{d57002c0-ec81-410f-9e69-c3b287bf452b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\share">
+      <UniqueIdentifier>{b943b5b6-f1e2-4060-82ff-9a2f45e50172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\share">
+      <UniqueIdentifier>{0602c0b0-8b1d-484e-a6cd-8f4f2b4805c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\json">
+      <UniqueIdentifier>{780d6ae8-afc2-44d8-8375-d866ba5d8257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\share\ui">
+      <UniqueIdentifier>{2bd0305f-fddd-4ec2-91fa-33c0354e893d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\share\ui">
+      <UniqueIdentifier>{2f236962-ddf7-4f75-a57d-e6f881533a22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\share\control">
+      <UniqueIdentifier>{5451d329-45fb-41c0-9d61-027bcc7fdf1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\vc-logge">
+      <UniqueIdentifier>{d30e333e-5bdf-42fb-a5c2-7fd25092f394}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="res\SensitiveVocabulary.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\loginFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\registFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\hallFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\passwordFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\infoFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="data\dataManager.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+    <ClInclude Include="room\room.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\roomManager.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\bank.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="face\faceSelFrame.h">
+      <Filter>头文件\face</Filter>
+    </ClInclude>
+    <ClInclude Include="face\UIFaceSel.h">
+      <Filter>头文件\face</Filter>
+    </ClInclude>
+    <ClInclude Include="face\faceSelList.h">
+      <Filter>头文件\face</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc\ipc.h">
+      <Filter>头文件\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalDef.h">
+      <Filter>头文件\PublicHeader\GlobalDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalField.h">
+      <Filter>头文件\PublicHeader\GlobalDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalFrame.h">
+      <Filter>头文件\PublicHeader\GlobalDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalIpc.h">
+      <Filter>头文件\PublicHeader\GlobalDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalProperty.h">
+      <Filter>头文件\PublicHeader\GlobalDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalRight.h">
+      <Filter>头文件\PublicHeader\GlobalDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\GlobalDef\GlobalSocket.h">
+      <Filter>头文件\PublicHeader\GlobalDef</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_CenterServer.h">
+      <Filter>头文件\PublicHeader\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_DatabaseServer.h">
+      <Filter>头文件\PublicHeader\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_GameServer.h">
+      <Filter>头文件\PublicHeader\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_HallServer.h">
+      <Filter>头文件\PublicHeader\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_LogonServer.h">
+      <Filter>头文件\PublicHeader\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_MatchGameServer.h">
+      <Filter>头文件\PublicHeader\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Network\CMD_Video.h">
+      <Filter>头文件\PublicHeader\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Array.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\BasicTypes.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Factory.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Macro.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Module.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Platform.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Public.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\SafeDelete.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\ServerPublic.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Singleton.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\StdHeaders.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\Template.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\BaseModule.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\BaseUtility.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\CmdLine.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\CSLock.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\DataQueue.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\Encrypt.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\FileSizeFormat.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\FunctionTrace.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\IniFile.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\IPAddress.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\MiniDump.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\ServiceThread.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\ShareMem.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\BaseModule\include\WinFileInfo.h">
+      <Filter>头文件\ShareModule\BaseModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\NetModule\include\NetModule.h">
+      <Filter>头文件\ShareModule\NetModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ShareModule\NetModule\include\NetPacketParserXorMap.h">
+      <Filter>头文件\ShareModule\NetModule\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\tinyxml\tinystr.h">
+      <Filter>ThirdParty\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\tinyxml\tinyxml.h">
+      <Filter>ThirdParty\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\wke\wke.h">
+      <Filter>ThirdParty\wke</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\imageOle\IImageOle.h">
+      <Filter>ThirdParty\imageOle</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\loadingFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PublicHeader\BaseHeader.h">
+      <Filter>头文件\PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UIGameItem.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="data\serviceData.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+    <ClInclude Include="room\userList.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\table.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="room\tableManager.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\sms\FYOpenApi.h">
+      <Filter>ThirdParty\sms</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc\loginServer.h">
+      <Filter>头文件\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc\gameServer.h">
+      <Filter>头文件\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc\serverBase.h">
+      <Filter>头文件\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curl.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curlbuild.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curlrules.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\curlver.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\easy.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\mprintf.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\multi.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\stdcheaders.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\libcurl\include\curl\typecheck-gcc.h">
+      <Filter>ThirdParty\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\zlib\ioapi.h">
+      <Filter>ThirdParty\zlip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\zlib\mztools.h">
+      <Filter>ThirdParty\zlip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\zlib\unzip.h">
+      <Filter>ThirdParty\zlip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\zlib\zconf.h">
+      <Filter>ThirdParty\zlip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\zlib\zip.h">
+      <Filter>ThirdParty\zlip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\zlib\zlib.h">
+      <Filter>ThirdParty\zlip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\jsonFile.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\smsConfig.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\stringConvertor.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\unicodemsxml.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="util\gameResource.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\gameUtil.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\gifImage.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\richEditUtil.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\trayMenu.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\zlibUtil.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="room\downloadFrame.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\allocator.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\assertions.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\autolink.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\config.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\features.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\forwards.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\json.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\reader.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\value.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\version.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\json\include\json\writer.h">
+      <Filter>ThirdParty\json</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\exitFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\lockFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\libcurlDownloader.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="room\userControl.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\ui\UIMenu.h">
+      <Filter>头文件\share\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\ui\UIScreenshotBox.h">
+      <Filter>头文件\share\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\ui\UIWkeWebkit.h">
+      <Filter>头文件\share\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\define.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\wndTimmer.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\ui\UIDialogFrame.h">
+      <Filter>头文件\share\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\mall.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UIBagItem.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\signFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\doleFrame.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\vc-logge\DynamicLogger.h">
+      <Filter>ThirdParty\vc-logge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\vc-logge\Logger.h">
+      <Filter>ThirdParty\vc-logge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ThirdParty\vc-logge\StaticLogger.h">
+      <Filter>ThirdParty\vc-logge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\numberConvert.h">
+      <Filter>头文件\share</Filter>
+    </ClInclude>
+    <ClInclude Include="data\serverList.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\control\IUnrealControl.h">
+      <Filter>头文件\share\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\control\IUserControl.h">
+      <Filter>头文件\share\control</Filter>
+    </ClInclude>
+    <ClInclude Include="room\unrealControl.h">
+      <Filter>头文件\room</Filter>
+    </ClInclude>
+    <ClInclude Include="data\userData.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\share\ui\UIControlGdiplus.h">
+      <Filter>头文件\share\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="hall\activity.h">
+      <Filter>头文件\hall</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\loginFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\registFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\hallFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\passwordFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\infoFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="data\dataManager.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\userData.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+    <ClCompile Include="room\room.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\roomManager.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\bank.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="face\faceSelFrame.cpp">
+      <Filter>源文件\face</Filter>
+    </ClCompile>
+    <ClCompile Include="face\UIFaceSel.cpp">
+      <Filter>源文件\face</Filter>
+    </ClCompile>
+    <ClCompile Include="face\faceSelList.cpp">
+      <Filter>源文件\face</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc\ipc.cpp">
+      <Filter>源文件\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\loadingFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UIGameItem.cpp">
+      <Filter>源文件\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="data\serviceData.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+    <ClCompile Include="room\userList.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\table.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="room\tableManager.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc\loginServe.cpp">
+      <Filter>源文件\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc\gameServer.cpp">
+      <Filter>源文件\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc\serverBase.cpp">
+      <Filter>源文件\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="util\gameResource.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\gameUtil.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\gifImage.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\richEditUtil.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\trayMenu.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\jsonFile.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\smsConfig.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\stringConvertor.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\unicodemsxml.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\zlibUtil.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="room\downloadFrame.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\exitFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\lockFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\libcurlDownloader.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="room\userControl.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\ui\UIMenu.cpp">
+      <Filter>源文件\share\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\ui\UIScreenshotBox.cpp">
+      <Filter>源文件\share\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\ui\UIWkeWebkit.cpp">
+      <Filter>源文件\share\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\wndTimmer.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\ui\UIDialogFrame.cpp">
+      <Filter>源文件\share\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\mall.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UIBagItem.cpp">
+      <Filter>源文件\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\signFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\doleFrame.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\numberConvert.cpp">
+      <Filter>源文件\share</Filter>
+    </ClCompile>
+    <ClCompile Include="data\serverList.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+    <ClCompile Include="room\unrealControl.cpp">
+      <Filter>源文件\room</Filter>
+    </ClCompile>
+    <ClCompile Include="..\share\ui\UIControlGdiplus.cpp">
+      <Filter>源文件\share\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="hall\activity.cpp">
+      <Filter>源文件\hall</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePlaza.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="tray.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="GamePlaza.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="444,170" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Container bkimage="file=&apos;common/blocks/dlg_block.png&apos; corner=&apos;10,40,10,10&apos;">
+        <Label text="大厅更新" float="true" pos="0,0,0,0" width="80" height="30" textcolor="#FF000001" font="0" align="center" />
+        <Progress name="update_plaza-progress" float="true" pos="27,76,0,0" width="390" height="31" bkimage="file=&apos;common/blocks/progress_bg_1.png&apos; corner=&apos;6,6,6,6&apos;" font="0" align="center" foreimage="file=&apos;common/blocks/progress_fg_1.png&apos; corner=&apos;6,6,6,6&apos;" min="0" max="100" value="0" hor="true" isstretchfore="false" />
+        <Label name="update_plaza-lab_total" text="正在加载中……" float="true" pos="102,76,0,0" width="240" height="31" textcolor="#FFFF0000" font="1" align="center" />
+        <Label name="update_plaza-lab_speed" text="- /s" float="true" pos="27,135,0,0" width="150" height="24" textcolor="#FF000001" font="0" />
+        <Button name="update_plaza-btn_download" text="官方下载" float="true" pos="269,138,0,0" width="66" height="18" textcolor="#FF0000FF" font="0" pushedtextcolor="#FF00ECD9" hottextcolor="#FF000001" />
+        <Button name="update_plaza-btn_cancel" text="取消下载" float="true" pos="351,137,0,0" width="66" height="18" textcolor="#FF0000FF" font="0" pushedtextcolor="#FF00ECD9" hottextcolor="#FF000001" />
+        <Button name="update_plaza-btn_close" float="true" pos="392,3,0,0" width="43" height="26" focusbordercolor="#FF0000FF" tab="true" align="center" normalimage="file=&apos;common/button/close.png&apos; source=&apos;0,0,43,26&apos;" hotimage="file=&apos;common/button/close.png&apos; source=&apos;43,0,86,26&apos;" pushedimage="file=&apos;common/button/close.png&apos; source=&apos;86,0,129,26&apos;" disabledimage="file=&apos;common/button/close.png&apos; source=&apos;129,0,172,26&apos;" />
+    </Container>
+</Window>

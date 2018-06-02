@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <VerticalLayout>
+        <HorizontalLayout>
+            <WkeWebkit name="sidebar_hall-adweb" />
+        </HorizontalLayout>
+        <Control height="9" />
+        <HorizontalLayout height="34">
+            <Control />
+            <Button name="sidebar_hall-sign_btn" bordersize="1" width="100" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_08_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_08_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_08_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;common/text/043.png&apos; aligncenter=&apos;true&apos;" />
+            <Control />
+            <Button name="sidebar_hall-dole_btn" bordersize="1" width="100" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_08_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_08_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_08_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;common/text/042.png&apos; aligncenter=&apos;true&apos;" />
+            <Control />
+        </HorizontalLayout>
+        <Control height="5" />
+    </VerticalLayout>
+</Window>

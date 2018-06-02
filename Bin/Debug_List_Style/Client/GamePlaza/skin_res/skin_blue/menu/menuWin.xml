@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="170,315" sizebox="4,4,4,4" caption="0,0,0,30" mininfo="170,315" bktrans="true">
+    <VerticalLayout />
+</Window>

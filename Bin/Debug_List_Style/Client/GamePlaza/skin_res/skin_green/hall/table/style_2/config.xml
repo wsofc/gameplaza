@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container width="220" height="170">
+        <Container float="true" pos="0,0,0,0" width="220" height="170">
+            <Control name="table_x_bg" float="true" pos="74,43,0,0" width="73" height="74" bkimage="TableNormal.png" />
+            <Control name="table_x_seat_bg_0" float="true" pos="14,60,0,0" width="40" height="40" bkimage="seat_1.png" />
+            <Control name="table_x_seat_bg_1" float="true" pos="158,60,0,0" width="40" height="40" bkimage="seat_1.png" />
+            <Button name="table_x_seat_box_0" float="true" pos="14,59,0,0" width="40" height="40" hotimage="box.png" />
+            <Button name="table_x_seat_box_1" float="true" pos="158,59,0,0" width="40" height="40" hotimage="box.png" />
+            <Text name="table_x_seat_0_text" text="player_0" tooltip="player_0" float="true" pos="6,20,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" textcolor="#FF0350D3" font="1" align="center" endellipsis="true" />
+            <Text name="table_x_seat_1_text" text="player_1" tooltip="player_1" float="true" pos="150,20,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" textcolor="#FF0350D3" font="1" align="center" endellipsis="true" />
+            <Control name="table_x_locker" float="true" pos="102,72,0,0" width="16" height="16" bkimage="Locker.png" />
+            <Control name="table_x_seat_0_ready" float="true" pos="82,72,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Control name="table_x_seat_1_ready" float="true" pos="123,72,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Label name="table_x_index" text="-- id --" float="true" pos="80,132,0,0" width="60" height="16" textcolor="#FFFF5F1F" font="0" align="center" />
+        </Container>
+    </Container>
+</Window>

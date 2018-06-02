@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="455,282" caption="0,0,0,20" bktrans="true">
+    <Font id="0" name="幼圆" size="16" bold="true" italic="false" />
+    <Container width="455" height="282" bkimage="file=&apos;exit/exit_bg.png&apos; corner=&apos;10,20,10,80&apos;">
+        <Button name="exit-btn_switch" float="true" pos="33,230,0,0" width="105" height="33" normalimage="common/button/btn_09_01.png" hotimage="common/button/btn_09_02.png" pushedimage="common/button/btn_09_03.png" foreimage="file=&apos;exit/text_1.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="exit-btn_cancel" float="true" pos="175,230,0,0" width="105" height="33" normalimage="common/button/btn_09_01.png" hotimage="common/button/btn_09_02.png" pushedimage="common/button/btn_09_03.png" foreimage="file=&apos;exit/text_2.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="exit-btn_exit" float="true" pos="314,230,0,0" width="105" height="33" normalimage="common/button/btn_09_01.png" hotimage="common/button/btn_09_02.png" pushedimage="common/button/btn_09_03.png" foreimage="file=&apos;exit/text_3.png&apos; aligncenter=&apos;true&apos;" />
+        <WkeWebkit name="exit-web_ad" float="true" height="190" name="exit-web_ad" pos="12,17,0,0" visible="true" width="428" />
+    </Container>
+</Window>

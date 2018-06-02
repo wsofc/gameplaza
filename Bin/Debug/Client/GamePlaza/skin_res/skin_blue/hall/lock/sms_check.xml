@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="360,180" caption="0,0,0,35" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="12" bold="false" italic="false" />
+    <Font id="2" name="宋体" size="15" bold="false" italic="false" />
+    <Font id="3" name="宋体" size="16" bold="true" italic="false" />
+    <Container bkimage="file=&apos;common/bg/bg_2.png&apos; corner=&apos;10,50,10,10&apos;">
+        <Text text="短信验证" float="true" pos="9,9,0,0" width="70" height="20" textpadding="2,0,2,0" textcolor="#FFFFFFFF" font="3" />
+        <Text text="您好，您此次登录的设备非上次登录的设备，我们将对您之前绑定的手机进行短信验证，确保您的账户安全!" float="true" pos="20,48,0,0" width="320" height="50" textpadding="2,0,2,0" textcolor="#FF000001" font="2" />
+        <Text text="友情提示:若5分钟内未收到短信验证码,可联系客服验证!" float="true" pos="28,154,0,0" width="304" height="18" textpadding="2,0,2,0" textcolor="#FFFF0000" font="1" />
+        <Text text="验证码:" float="true" pos="20,115,0,0" width="60" height="18" textpadding="2,0,2,0" textcolor="#FF000001" font="2" />
+        <RichEdit name="sms_check-edt_vcode" float="true" pos="80,110,0,0" width="173" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" bkcolor="#FFFFFFFF" tab="true" font="0" textcolor="#FF000001" maxchar="4" readonlyshowcaret="true" autohscroll="true" textpadding="8,6,8,0" />
+        <Button name="sms_check-btn_getcode" text="点击获取验证码" bordersize="1" float="true" pos="159,115,0,0" width="90" height="20" focusbordercolor="#FFFF0000" tab="true" textcolor="#FF0000FF" font="1" pushedtextcolor="#FFFF0000" />
+        <Button name="sms_check-btn_login" text="登 录" bordersize="1" float="true" pos="256,107,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" textcolor="#FFFFFFFF" font="3" normalimage="file=&apos;common/button/btn_11_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_11_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_11_03.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Button name="sms_check-btn_close" bordersize="1" float="true" pos="303,3,0,0" width="44" height="24" focusbordercolor="#FFFF0000" tab="true" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; corner=&apos;0,72,44,96&apos;" />
+    </Container>
+</Window>

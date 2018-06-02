@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="530,465" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="12" bold="false" italic="false" />
+    <Container>
+        <VerticalLayout width="457" height="376" bkimage="file=&apos;common/blocks/dlg_block.png&apos; corner=&apos;10,40,10,10&apos;">
+            <Label text="用户注册" float="true" pos="0,0,0,0" width="80" height="30" textpadding="10,0,0,0" textcolor="#FF000001" font="1" />
+            <Label text="账号" float="true" pos="0,50,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="昵称" float="true" pos="0,87,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="性别" float="true" pos="50,124,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="男" float="true" pos="169,124,0,0" width="20" height="20" textcolor="#FF000001" font="1" />
+            <Label text="女" float="true" pos="240,124,0,0" width="20" height="20" textcolor="#FF000001" font="1" />
+            <Label text="密码" float="true" pos="0,161,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="确认密码" float="true" pos="0,198,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="手机号码" float="true" pos="0,235,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="验证码" float="true" pos="0,272,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="真实姓名" float="true" pos="0,309,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="身份证" float="true" pos="0,346,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <Label text="QQ号码" float="true" pos="0,381,0,0" width="80" height="20" textcolor="#FF000001" font="1" align="right" />
+            <RichEdit name="regist-edt_account" float="true" pos="90,48,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="18" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <RichEdit name="regist-edt_nickname" float="true" pos="90,85,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="30" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <Option name="regist-opt_gender_man" bordersize="1" float="true" pos="140,124,0,0" width="18" height="18" bkimage="file=&apos;common/blocks/singleselect_bt.png&apos; source=&apos;0,0,18,18&apos;" focusbordercolor="#FF0000FF" tab="true" group="regist-gender" selected="true" selectedimage="file=&apos;common/blocks/singleselect_bt.png&apos; source=&apos;18,0,36,18&apos;" />
+            <Option name="regist-opt_gender_woman" bordersize="1" float="true" pos="212,124,0,0" width="18" height="18" bkimage="file=&apos;common/blocks/singleselect_bt.png&apos; source=&apos;0,0,18,18&apos;" focusbordercolor="#FF0000FF" tab="true" group="regist-gender" selectedimage="file=&apos;common/blocks/singleselect_bt.png&apos; source=&apos;18,0,36,18&apos;" />
+            <RichEdit name="regist-edt_password" float="true" pos="90,160,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="18" password="true" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <RichEdit name="regist-edt_password_ex" float="true" pos="90,197,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="18" password="true" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <RichEdit name="regist-edt_telphone" float="true" pos="90,234,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="15" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <RichEdit name="regist-edt_vertcode" float="true" pos="90,271,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="4" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,90,0" />
+            <Button name="regist-btn_getcode" text="点击获取验证码" bordersize="1" float="true" pos="180,271,0,0" width="90" height="22" focusbordercolor="#FF000000" tab="true" textcolor="#FF0000FF" font="2" pushedtextcolor="#FFFF0000" />
+            <RichEdit name="regist-edt_realname" float="true" pos="90,308,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="6" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <RichEdit name="regist-edt_idcard" float="true" pos="90,344,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="18" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <RichEdit name="regist-edt_qq" float="true" pos="90,379,0,0" width="180" height="22" tab="true" font="1" textcolor="#FF000000" maxchar="18" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="10,4,10,0" />
+            <Button name="regist-btn_regist" text="注 册" bordersize="1" float="true" pos="65,425,0,0" width="82" height="23" focusbordercolor="#FF0000FF" tab="true" textcolor="#FF000001" font="1" normalimage="file=&apos;common/button/btn_01.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_01.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_01.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_01.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+            <Button name="regist-btn_cancel" text="取 消" bordersize="1" float="true" pos="383,425,0,0" width="82" height="23" focusbordercolor="#FF0000FF" tab="true" textcolor="#FF000001" font="1" normalimage="file=&apos;common/button/btn_01.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_01.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_01.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_01.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+            <Button name="regist-btn_close" bordersize="1" float="true" pos="478,3,0,0" width="43" height="26" focusbordercolor="#FF0000FF" tab="true" align="center" normalimage="file=&apos;common/button/close.png&apos; source=&apos;0,0,43,26&apos;" hotimage="file=&apos;common/button/close.png&apos; source=&apos;43,0,86,26&apos;" pushedimage="file=&apos;common/button/close.png&apos; source=&apos;86,0,129,26&apos;" disabledimage="file=&apos;common/button/close.png&apos; source=&apos;129,0,172,26&apos;" />
+            <Text name="regist-txt_account" text="(*)5~18个英文字母、数字、下划线组成" float="true" pos="310,45,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_nickname" text="(*)4~30个字符组成(一个汉字占2个字符,不能包含空格等)" float="true" pos="310,80,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_password" text="(*)6~18个有效字符(不能包含中文、空格等)，区分大小写" float="true" pos="310,156,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_password_ex" text="(*)请再次确认您的密码" float="true" pos="310,194,0,0" width="190" height="30" textpadding="2,8,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_telphone" text="(*)请输入您的手机号码" float="true" pos="310,232,0,0" width="190" height="30" textpadding="2,8,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_vertcode" text="(*)请输入短信验证码(若5分钟内未收到,可联系客服注册)" float="true" pos="310,270,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_realname" text="请输入您的真实姓名(2~6个汉字组成，不能包含空格等)" float="true" pos="310,306,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_idcard" text="由15~18位有效字符组成" float="true" pos="310,342,0,0" width="190" height="30" textpadding="2,8,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Text name="regist-txt_qq" text="由5~18位有效字符组成" float="true" pos="310,376,0,0" width="190" height="30" textpadding="2,8,2,0" textcolor="#FF000001" font="3" endellipsis="true" />
+            <Control name="regist-ctl_account" float="true" pos="280,51,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_nickname" float="true" pos="280,88,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_password" float="true" pos="280,162,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_password_ex" float="true" pos="280,200,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_telphone" float="true" pos="280,238,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_vertcode" float="true" pos="280,275,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_realname" float="true" pos="280,312,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_idcard" float="true" pos="280,347,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Control name="regist-ctl_qq" float="true" pos="280,383,0,0" width="16" height="16" bkimage="file=&apos;common/blocks/tooltip.png&apos; source=&apos;0,0,16,16&apos;" />
+            <Text text="温馨提示: (*)为必填选项" float="true" pos="181,430,0,0" width="169" height="15" textpadding="2,0,2,0" textcolor="#FF000001" font="3" />
+            <Text text="          (*)" float="true" pos="181,430,0,0" width="169" height="15" textpadding="2,0,2,0" textcolor="#FFFF0000" font="3" />
+            <Text name="regist-txt_account_must" text="(*)" float="true" pos="310,45,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FFFF0000" font="3" endellipsis="true" />
+            <Text name="regist-txt_nickname_must" text="(*)" float="true" pos="310,80,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FFFF0000" font="3" endellipsis="true" />
+            <Text name="regist-txt_password_must" text="(*)" float="true" pos="310,156,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FFFF0000" font="3" endellipsis="true" />
+            <Text name="regist-txt_password_ex_must" text="(*)" float="true" pos="310,194,0,0" width="190" height="30" textpadding="2,8,2,0" textcolor="#FFFF0000" font="3" endellipsis="true" />
+            <Text name="regist-txt_telphone_must" text="(*)" float="true" pos="310,232,0,0" width="190" height="30" textpadding="2,8,2,0" textcolor="#FFFF0000" font="3" endellipsis="true" />
+            <Text name="regist-txt_vertcode_must" text="(*)" float="true" pos="310,270,0,0" width="190" height="30" textpadding="2,0,2,0" textcolor="#FFFF0000" font="3" endellipsis="true" />
+        </VerticalLayout>
+        <Control name="waitting-fade_layer" float="true" pos="0,30,0,0" width="530" height="435" mouse="false" />
+    </Container>
+</Window>

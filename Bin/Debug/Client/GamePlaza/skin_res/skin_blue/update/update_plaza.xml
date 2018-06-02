@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="444,182" caption="0,0,0,65" bktrans="true">
+	<Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="14" bold="false" italic="false" />
+    <Container bkimage="update/plaza_bg.png">
+        <Button name="update_plaza-btn_close" float="true" pos="392,8,0,0" width="44" height="24" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,72,44,96&apos;" />
+        <Button name="update_plaza-btn_download" text="官方下载" float="true" pos="243,138,0,0" width="66" height="18" textcolor="#FF969696" font="0" pushedtextcolor="#FF464646" hottextcolor="#FF0079FF" />
+        <Button name="update_plaza-btn_cancel" float="true" pos="319,130,0,0" width="98" height="34" textcolor="#FFFFFFFF" font="0" normalimage="file=&apos;common/button/btn_03_01.png&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;common/button/btn_03_02.png&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;common/button/btn_03_03.png&apos; corner=&apos;10,10,10,10&apos;" disabledimage="file=&apos;common/button/btn_03_04.png&apos; corner=&apos;10,10,10,10&apos;" foreimage="file=&apos;common/text/051.png&apos; aligncenter=&apos;true&apos;" />
+        <Progress name="update_plaza-progress" float="true" pos="27,76,0,0" width="390" height="31" bkimage="file=&apos;common/blocks/progress_bg_1.png&apos; corner=&apos;6,6,6,6&apos;" font="0" align="center" foreimage="file=&apos;common/blocks/progress_fg_1.png&apos; corner=&apos;6,6,6,6&apos;" min="0" max="100" value="0" hor="true" isstretchfore="false" />
+        <Label name="update_plaza-lab_total" text="正在加载中……" float="true" pos="102,76,0,0" width="240" height="31" textcolor="#FFFF0000" font="1" align="center" />
+        <Label name="update_plaza-lab_speed" text="- /s" float="true" pos="27,135,0,0" width="150" height="24" textcolor="#FF969696" font="0" />
+    </Container>
+</Window>

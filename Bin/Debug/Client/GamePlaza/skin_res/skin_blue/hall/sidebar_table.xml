@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <HorizontalLayout>
+        <Control width="2" />
+        <VerticalLayout>
+			<List name="sidebar_table-userlist" inset="1,1,1,1" bordersize="1" itemshowhtml="true" itemfont="1" itemendellipsis="true" itemalign="left" itemtextcolor="#FFE9C05A" itemhotbkcolor="#FF293962" itemselectedbkcolor="#FF384055" vscrollbar="true" hscrollbar="true" headerbkimage="file='common/list/bg_01.png' corner='4,4,4,4'" />
+            <HorizontalLayout height="80">
+				<Control />
+				<prop_panel width="233" />
+				<Control />
+			</HorizontalLayout>
+            <VerticalLayout>
+                <HorizontalLayout>
+                    <Control width="2" />
+                    <VerticalLayout>
+                        <RichEdit name="sidebar_table-MSG_view" vscrollbar="true" font="4" textcolor="#FFDCC7C7" readonly="true" readonlyshowcaret="true" multiline="true" rich="true" />
+                        <Control height="4" />
+                        <HorizontalLayout height="29">
+                            <Control width="4" />
+                            <Button name="sidebar_table-MSG_face" tooltip="表情" width="27" bkimage="hall/chat_icon_1.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;4,4,4,4&apos;" />
+                            <Control width="4" />
+                            <Button name="sidebar_table-MSG_clean" tooltip="清理" width="27" bkimage="hall/chat_icon_2.png" hotimage="file=&apos;common/button/btn_hot.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_push.png&apos; corner=&apos;4,4,4,4&apos;" />
+                            <Control width="4" />
+							<Control />
+                        </HorizontalLayout>
+                        <HorizontalLayout height="34">
+                            <RichEdit name="sidebar_table-MSG_input" font="2" maxchar="256" textcolor="#FF000000" rich="true" autohscroll="true" normalimage="file=&apos;common/blocks/fr_input2.png&apos; corner=&apos;6,6,6,6&apos;" textpadding="8,8,8,0" />
+                            <Button name="sidebar_table-MSG_send" width="25" normalimage="file=&apos;common/button/btn_01_01.png&apos; corner=&apos;4,4,4,4&apos;" hotimage="file=&apos;common/button/btn_01_02.png&apos; corner=&apos;4,4,4,4&apos;" pushedimage="file=&apos;common/button/btn_01_03.png&apos; corner=&apos;4,4,4,4&apos;" foreimage="file=&apos;common/text/038.png&apos; aligncenter=&apos;true&apos;" />
+                        </HorizontalLayout>
+                        <Control height="10" />
+                    </VerticalLayout>
+                    <Control width="2" />
+                </HorizontalLayout>
+                <Control height="2" />
+            </VerticalLayout>
+        </VerticalLayout>
+        <Control width="2" />
+    </HorizontalLayout>
+</Window>

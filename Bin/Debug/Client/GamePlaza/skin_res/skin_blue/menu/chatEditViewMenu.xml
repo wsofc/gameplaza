@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+	<Font id="0" name="宋体" size="12" bold="false" default="true" />
+	<Default name="Menu" value="font=&quot;0&quot; itemtextcolor=&quot;0xFF000001&quot; itemhottextcolor=&quot;0xFFFFFFFF&quot; itemselectedtextcolor=&quot;0xFFFFFFFF&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;30,0,0,0&quot; bkimage=&quot;file='common/blocks/menu_block.png' corner='26,2,2,2' source='6,6,44,24'&quot; itemselectedbkcolor=&quot;0xFF338ACA&quot;" />
+	<Default name="ExplandIcon" value="menu/menu_expand.png" />
+	<Menu>
+		<MenuElement name="Menu_Copy" text=" 复制" />
+		<MenuElement name="Menu_SelAll" text=" 全部选择" />
+		<MenuElement linetype="true" />
+		<MenuElement text=" 显示比例 " expland="true">
+			<MenuElement name="Menu_ZoomRatio_200" text=" 200% " icon="menu/right.png" iconsize="9,9" checkswitch="true" group="chatEditViewMenu_group" />
+			<MenuElement name="Menu_ZoomRatio_150" text=" 150% " icon="menu/right.png" iconsize="9,9" checkswitch="true" group="chatEditViewMenu_group" />
+			<MenuElement name="Menu_ZoomRatio_125" text=" 125% " icon="menu/right.png" iconsize="9,9" checkswitch="true" group="chatEditViewMenu_group" />
+			<MenuElement name="Menu_ZoomRatio_100" text=" 100% " icon="menu/right.png" iconsize="9,9" checkswitch="true" checked="true" group="chatEditViewMenu_group" />
+			<menuelement name="Menu_ZoomRatio_75" text=" 75% " icon="menu/right.png" iconsize="9,9" checkswitch="true" group="chatEditViewMenu_group" />
+		</MenuElement>
+		<MenuElement name="Menu_SaveAs" text=" 另存为" />
+		<MenuElement linetype="true" />
+		<MenuElement name="Menu_Clear" text=" 清屏" />
+	</Menu>
+</Window>

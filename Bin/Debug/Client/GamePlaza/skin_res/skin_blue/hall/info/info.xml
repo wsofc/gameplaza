@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="556,382" caption="0,0,0,50" bktrans="true">
+	<Font id="0" name="宋体" size="14" bold="true" italic="false" />
+    <Font id="1" name="宋体" size="14" bold="false" italic="false" />
+	<Font id="2" name="宋体" size="15" bold="false" italic="false" />
+	<Default name="HScrollBar" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,14,14' &quot; button1hotimage=&quot;file='scrollbar.png' source='28,0,42,14' &quot; button1pushedimage=&quot;file='scrollbar.png' source='14,0,28,14' &quot; button1disabledimage=&quot;file='scrollbar.png' source='42,0,56,14' &quot; button2normalimage=&quot;file='scrollbar.png' source='0,14,14,28' &quot; button2hotimage=&quot;file='scrollbar.png' source='28,14,42,28' &quot; button2pushedimage=&quot;file='scrollbar.png' source='14,14,28,28' &quot; button2disabledimage=&quot;file='scrollbar.png' source='42,14,56,28' &quot; button3normalimage=&quot;file='scrollbar.png' source='0,136,14,140' &quot; button3hotimage=&quot;file='scrollbar.png' source='28,136,42,140' &quot; button3pushedimage=&quot;file='scrollbar.png' source='14,136,28,140' &quot; button3disabledimage=&quot;file='scrollbar.png' source='42,136,56,140' &quot; button4normalimage=&quot;file='scrollbar.png' source='0,140,14,154' &quot; button4hotimage=&quot;file='scrollbar.png' source='28,140,42,154' &quot; button4pushedimage=&quot;file='scrollbar.png' source='14,140,28,154' &quot; button4disabledimage=&quot;file='scrollbar.png' source='42,140,56,154' &quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,28,14,42' corner='5,5,5,5' &quot; thumbhotimage=&quot;file='scrollbar.png' source='14,28,28,42' corner='5,5,5,5' &quot; thumbpushedimage=&quot;file='scrollbar.png' source='28,28,42,42' corner='5,5,5,5' &quot; thumbdisabledimage=&quot;file='scrollbar.png' source='42,28,56,42' corner='5,5,5,5' &quot; railnormalimage=&quot;file='scrollbar.png' source='0,42,14,56' corner='5,5,5,5' &quot; railhotimage=&quot;file='scrollbar.png' source='14,42,28,56' corner='5,5,5,5' &quot; railpushedimage=&quot;file='scrollbar.png' source='28,42,42,56' corner='5,5,5,5' &quot; raildisabledimage=&quot;file='scrollbar.png' source='42,42,56,56' corner='5,5,5,5' &quot; bknormalimage=&quot;file='scrollbar.png' source='0,56,14,70' corner='5,5,5,5' &quot; bkhotimage=&quot;file='scrollbar.png' source='28,56,42,70' corner='5,5,5,5' &quot; bkpushedimage=&quot;file='scrollbar.png' source='14,56,28,70' corner='5,5,5,5' &quot; bkdisabledimage=&quot;file='scrollbar.png' source='42,56,56,70' corner='5,5,5,5' &quot; " />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.png' source='0,70,14,84' &quot; button1hotimage=&quot;file='scrollbar.png' source='28,70,42,84' &quot; button1pushedimage=&quot;file='scrollbar.png' source='14,70,28,84' &quot; button1disabledimage=&quot;file='scrollbar.png' source='42,70,56,84' &quot; button2normalimage=&quot;file='scrollbar.png' source='0,84,14,98' &quot; button2hotimage=&quot;file='scrollbar.png' source='28,84,42,98' &quot; button2pushedimage=&quot;file='scrollbar.png' source='14,84,28,98' &quot; button2disabledimage=&quot;file='scrollbar.png' source='42,84,56,98' &quot; button3normalimage=&quot;file='scrollbar.png' source='0,168,14,182' &quot; button3hotimage=&quot;file='scrollbar.png' source='28,168,42,182' &quot; button3pushedimage=&quot;file='scrollbar.png' source='14,168,28,182' &quot; button3disabledimage=&quot;file='scrollbar.png' source='42,168,56,182' &quot; button4normalimage=&quot;file='scrollbar.png' source='0,182,14,196' &quot; button4hotimage=&quot;file='scrollbar.png' source='28,182,42,196' &quot; button4pushedimage=&quot;file='scrollbar.png' source='14,182,28,196' &quot; button4disabledimage=&quot;file='scrollbar.png' source='42,182,56,196' &quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,98,14,112' corner='5,5,5,5' &quot; thumbhotimage=&quot;file='scrollbar.png' source='14,98,28,112' corner='5,5,5,5' &quot; thumbpushedimage=&quot;file='scrollbar.png' source='28,98,42,112' corner='5,5,5,5' &quot; thumbdisabledimage=&quot;file='scrollbar.png' source='42,28,56,42' corner='5,5,5,5' &quot; railnormalimage=&quot;file='scrollbar.png' source='0,112,14,126' corner='5,5,5,5' &quot; railhotimage=&quot;file='scrollbar.png' source='14,112,28,126' corner='5,5,5,5' &quot; railpushedimage=&quot;file='scrollbar.png' source='28,112,42,126' corner='5,5,5,5' &quot; raildisabledimage=&quot;file='scrollbar.png' source='42,112,56,126' corner='5,5,5,5' &quot; bknormalimage=&quot;file='scrollbar.png' source='0,126,14,140' corner='5,5,5,5' &quot; bkhotimage=&quot;file='scrollbar.png' source='28,126,42,140' corner='5,5,5,5' &quot; bkpushedimage=&quot;file='scrollbar.png' source='14,126,28,140' corner='5,5,5,5' &quot; bkdisabledimage=&quot;file='scrollbar.png' source='42,126,56,140' corner='5,5,5,5' &quot; " />
+	
+	<VerticalLayout bkimage="hall/info/bg.png">
+        <Control float="true" pos="208,15,0,0" width="140" height="31" bkimage="hall/info/title.png" />
+		<TreeView name="info-treeview" float="true" pos="5,60,116,340" width="110" height="280" visiblefolderbtn="true" vscrollbar="true" itemhotbkcolor="#4CE57E46" itemselectedbkcolor="#665175B1">
+			<TreeNode name="info-opt_1" height="38" bkimage="file=&apos;hall/info/text_001.png&apos; aligncenter=&apos;true&apos;" dotlineattr="width=&quot;104&quot;" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;" />
+			<TreeNode mouse="false" height="2" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;" dotlineattr="width=&quot;1&quot;">
+				<Label bkimage="file=&apos;hall/split.png&apos; corner=&apos;30,0,30,0&apos;" />
+			</TreeNode>
+			<TreeNode name="info-opt_2" height="38" bkimage="file=&apos;hall/info/text_002.png&apos; aligncenter=&apos;true&apos;" dotlineattr="width=&quot;104&quot;" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;">
+				<TreeNode name="info-head_opt_1" height="20" dotlineattr="width=&quot;1&quot;" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;">
+					<Control width="20" />
+					<Label text="系统头像" textcolor="FFFF8000" font="1" />
+				</TreeNode>
+				
+				<!-- 暂时屏蔽"自定义头像" -->
+				<!-- <TreeNode name="info-head_opt_2" height="20" dotlineattr="width=&quot;1&quot;" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;"> -->
+					<!-- <Control width="20" /> -->
+					<!-- <Label text="自定义头像" textcolor="FFFF8000" font="1" /> -->
+				<!-- </TreeNode> -->
+				
+			</TreeNode>
+			<TreeNode mouse="false" height="2" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;" dotlineattr="width=&quot;1&quot;">
+				<Label bkimage="file=&apos;hall/split.png&apos; corner=&apos;30,0,30,0&apos;" />
+			</TreeNode>
+			<TreeNode name="info-opt_3" height="38" bkimage="file=&apos;hall/info/text_003.png&apos; aligncenter=&apos;true&apos;" dotlineattr="width=&quot;104&quot;" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;" />
+			<TreeNode mouse="false" height="2" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;" dotlineattr="width=&quot;1&quot;">
+				<Label bkimage="file=&apos;hall/split.png&apos; corner=&apos;30,0,30,0&apos;" />
+			</TreeNode>
+			<TreeNode name="info-opt_4" height="38" bkimage="file=&apos;hall/info/text_004.png&apos; aligncenter=&apos;true&apos;" dotlineattr="width=&quot;104&quot;" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;" />
+			<TreeNode mouse="false" height="2" itemattr="width=&quot;1&quot;" folderattr="width=&quot;1&quot; mouse=&quot;false&quot;" dotlineattr="width=&quot;1&quot;">
+				<Label bkimage="file=&apos;hall/split.png&apos; corner=&apos;30,0,30,0&apos;" />
+			</TreeNode>
+		</TreeView>
+        <TabLayout name="info-switch" float="true" pos="120,58,0,0" width="428" height="316">
+            <info_switch_1 name="info-switch_1" />
+            <info_switch_2 name="info-switch_2" />
+            <info_switch_3 name="info-switch_3" />
+			<info_switch_4 name="info-switch_4" />
+        </TabLayout>
+        <Button name="info-closebtn" bordersize="1" float="true" pos="508,14,0,0" width="27" height="27" focusbordercolor="#FFFFFFFF" tab="true" normalimage="common/button/btn_close_normal.png" hotimage="common/button/btn_close_hot.png" pushedimage="common/button/btn_close_down.png" />
+		<Control name="waitting-fade_layer" float="true" pos="0,60,0,0" width="556" height="322" />
+	</VerticalLayout>
+</Window>

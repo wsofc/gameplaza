@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,128" caption="0,0,0,200" bktrans="true">
+    <Container width="400" height="200" bkimage="login/loading_bg.png">
+        <Button name="loading-close_btn" float="true" pos="296,2,0,0" width="44" height="24" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" />
+        <Progress name="loading-progress" float="true" pos="67,79,0,0" width="216" height="14" bkimage="file=&apos;common/blocks/progress_bg_3.png&apos; corner=&apos;4,4,4,4&apos;" foreimage="file=&apos;common/blocks/progress_fg_3.png&apos; corner=&apos;4,4,4,4&apos;" min="0" max="100" value="0" hor="true" isstretchfore="false" />
+        <Control float="true" pos="128,49,0,0" width="95" height="14" bkimage="login/loading_lab.png" />
+    </Container>
+</Window>

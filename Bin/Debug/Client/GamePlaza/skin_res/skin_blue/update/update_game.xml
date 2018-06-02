@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="563,282" caption="0,0,0,65" bktrans="true">
+    <Font id="0" name="宋体" size="13" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="16" bold="false" italic="false" />
+    <Container name="update_game-container" bkimage="update/game_bg.png">
+        <Button name="update_game-btn_close" float="true" pos="519,0,0,0" width="44" height="24" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,72,44,96&apos;" />
+        <Button name="update_game-btn_download" text="官网下载" float="true" pos="338,244,0,0" width="98" height="30" textcolor="#FF969696" font="1" pushedtextcolor="#FF464646" hottextcolor="#FF0079FF" />
+        <Button name="update_game-btn_cancel" text="取消更新" float="true" pos="445,242,0,0" width="98" height="34" textcolor="#FFFFFFFF" font="1" normalimage="file=&apos;common/button/btn_03_01.png&apos; corner=&apos;10,10,10,10&apos;" hotimage="file=&apos;common/button/btn_03_02.png&apos; corner=&apos;10,10,10,10&apos;" pushedimage="file=&apos;common/button/btn_03_03.png&apos; corner=&apos;10,10,10,10&apos;" disabledimage="file=&apos;common/button/btn_03_04.png&apos; corner=&apos;10,10,10,10&apos;" />
+    </Container>
+</Window>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container>
+        <TabLayout name="info_switch_2-switch">
+			<TileLayout name="info_switch_2-sys_head_panel" float="true" pos="0,10,428,260" width="428" height="250" vscrollbar="true" />
+            <Container>
+                <Label name="info_switch_2-thumbnail_01" float="true" pos="30,90,0,0" width="40" height="40" bkimage="hall/info/default_pic_01.png" />
+                <Label name="info_switch_2-thumbnail_02" float="true" pos="115,70,0,0" width="80" height="80" bkimage="hall/info/default_pic_02.png" />
+                <Container float="true" pos="245,30,0,0" width="160" height="160">
+                    <Button name="info_switch_2-choose_btn" normalimage="hall/info/btn_01_01.png" hotimage="hall/info/btn_01_02.png" pushedimage="hall/info/btn_01_03.png" />
+                    <ScreenshotBox bordercolor="#FF0000ee" bordersize="1" inset="2,2,2,2" name="info_switch_2-head_shot_box" visible="false" />
+                </Container>
+                <Label text="桌面形象" float="true" pos="20,160,0,0" width="60" height="30" textcolor="#FF969696" font="1" align="center" />
+                <Label text="游戏中形象" float="true" pos="115,160,0,0" width="80" height="30" textcolor="#FF969696" font="1" align="center" />
+                <Text text="禁止使用色情，反动等非法图片，一经发现，本公司有权进行封号处理，未经允许，禁止使用他人照片。" float="true" pos="62,223,0,0" width="360" height="40" textpadding="2,0,2,0" textcolor="#FF969696" font="1" />
+                <Text text="注意:" float="true" pos="20,223,0,0" width="42" height="30" textpadding="2,0,2,0" textcolor="#FFE32C21" font="1" />
+            </Container>
+        </TabLayout>
+        <Button name="info_switch_2-btn_ensure" bordersize="1" float="true" pos="48,272,0,0" width="105" height="33" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_09_01.png&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_09_02.png&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_09_03.png&apos; corner=&apos;10,4,10,4&apos;" foreimage="file=&apos;common/text/017.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="info_switch_2-btn_cancel" bordersize="1" float="true" pos="275,272,0,0" width="105" height="33" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_09_01.png&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_09_02.png&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_09_03.png&apos; corner=&apos;10,4,10,4&apos;" foreimage="file=&apos;common/text/018.png&apos; aligncenter=&apos;true&apos;" />
+    </Container>
+</Window>

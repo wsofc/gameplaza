@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,200" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Container bkimage="file=&apos;common/bg/bg_2.png&apos; corner=&apos;10,50,10,10&apos;">
+        <Label float="true" pos="19,7,0,0" width="64" height="19" bkimage="file=&apos;hall/mall/title_give.png&apos; aligncenter=&apos;true&apos;" />
+        <Text text="道具名称：" float="true" pos="40,45,0,0" width="100" height="20" textpadding="2,0,2,0" textcolor="#FF737479" font="0" align="right" />
+        <Text text="赠送数量：" float="true" pos="40,80,0,0" width="100" height="20" textpadding="2,0,2,0" textcolor="#FF737479" font="0" align="right" />
+        <Text text="接收者ID：" float="true" pos="40,115,0,0" width="100" height="20" textpadding="2,0,2,0" textcolor="#FF737479" font="0" align="right" />
+        <Text name="mall_give-txt_name" text="商品x" float="true" pos="160,45,0,0" width="150" height="20" textpadding="2,0,2,0" textcolor="#FF007CFF" font="0" align="center" />
+        <RichEdit name="mall_give-edt_count" text="0" float="true" pos="160,75,0,0" width="150" height="30" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" bkcolor="#FFFFFFFF" tab="true" textpadding="6,8,6,6" font="0" textcolor="#FF737479" maxchar="3" canpaste="false" align="center" />
+        <RichEdit name="mall_give-edt_id" text="0" float="true" pos="160,110,0,0" width="150" height="30" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" bkcolor="#FFFFFFFF" tab="true" textpadding="6,8,6,6" font="0" textcolor="#FF737479" maxchar="14" canpaste="false" align="center" />
+        <Button name="mall_give-btn_cancel" bordersize="1" float="true" pos="217,154,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_10_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_10_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_10_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_cancel.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="mall_give-btn_ensure" bordersize="1" float="true" pos="50,154,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_11_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_11_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_11_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_ensure.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="mall_give-btn_close" bordersize="1" float="true" pos="293,3,0,0" width="44" height="24" focusbordercolor="#FFFF0000" tab="true" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; corner=&apos;0,72,44,96&apos;" />
+    </Container>
+</Window>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container>
+        <WkeWebkit float="true" name="bank-switch_5-web_rebate" pos="0,4,402,285" />
+    </Container>
+</Window>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <HorizontalLayout>
+        <Label float="true" pos="18,25,0,0" width="64" height="17" bkimage="file=&apos;hall/info/info_1_account.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="17,67,0,0" width="64" height="17" bkimage="file=&apos;hall/info/info_1_name.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="18,111,0,0" width="64" height="17" bkimage="file=&apos;hall/info/info_1_tel.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="18,154,0,0" width="64" height="17" bkimage="file=&apos;hall/info/info_1_id.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="254,25,0,0" width="36" height="17" bkimage="file=&apos;hall/info/info_1_nickname.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="254,67,0,0" width="37" height="17" bkimage="file=&apos;hall/info/info_1_gender.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="254,111,0,0" width="37" height="17" bkimage="file=&apos;hall/info/info_1_email.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="254,154,0,0" width="37" height="17" bkimage="file=&apos;hall/info/info_1_qq.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <Label float="true" pos="18,197,0,0" width="64" height="17" bkimage="file=&apos;hall/info/info_1_desc.png&apos; aligncenter=&apos;true&apos;" textcolor="#FFFFFFFF" font="1" />
+        <RichEdit name="info_switch_1-edt_account" float="true" pos="92,20,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="20" readonly="true" readonlyshowcaret="true" autohscroll="true" textpadding="8,6,8,0" />
+        <RichEdit name="info_switch_1-edt_name" float="true" pos="92,62,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="20" autohscroll="true" textpadding="8,6,8,0" />
+        <RichEdit name="info_switch_1-edt_tel" float="true" pos="92,106,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="15" canpaste="false" autohscroll="true" textpadding="8,6,8,0" />
+        <RichEdit name="info_switch_1-edt_id" float="true" pos="92,149,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="18" canpaste="false" autohscroll="true" textpadding="8,6,8,0" />
+        <RichEdit name="info_switch_1-edt_nickname" float="true" pos="300,20,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="30" autohscroll="true" textpadding="8,6,8,0" />
+        <Container float="true" pos="300,62,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;">
+            <Combo name="info_switch_1-cmb_gender" itemfont="1" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="file=&apos;common/button/combo_02_01.png&apos; corner=&apos;10,4,30,4&apos;" hotimage="file=&apos;common/button/combo_02_02.png&apos; corner=&apos;10,4,30,4&apos;" pushedimage="file=&apos;common/button/combo_02_03.png&apos; corner=&apos;10,4,30,4&apos;">
+                <ListLabelElement text="男" selected="true" />
+                <ListLabelElement text="女" />
+            </Combo>
+            <HorizontalLayout mouse="false">
+                <RichEdit name="info_switch_1-edt_gender" text="男" font="1" readonly="true" canpaste="false" textpadding="8,6,8,0" />
+                <Control width="24" mouse="false" />
+            </HorizontalLayout>
+        </Container>
+        <RichEdit name="info_switch_1-edt_email" float="true" pos="300,106,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="20" autohscroll="true" textpadding="8,6,8,0" />
+        <RichEdit name="info_switch_1-edt_qq" float="true" pos="300,149,0,0" width="110" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="20" canpaste="false" autohscroll="true" textpadding="8,6,8,0" />
+        <RichEdit name="info_switch_1-edt_desc" float="true" pos="94,195,0,0" width="316" height="55" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" tab="true" font="1" maxchar="100" multiline="true" textpadding="8,6,8,0" />
+        <Label name="info_switch_1-remainwords" text="100/100" float="true" pos="23,219,0,0" width="50" height="15" textcolor="#FFA7A6AA" font="0" align="center" />
+        <Button name="info_switch_1-btn_ensure" bordersize="1" float="true" pos="48,272,0,0" width="105" height="33" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_09_01.png&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_09_02.png&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_09_03.png&apos; corner=&apos;10,4,10,4&apos;" foreimage="file=&apos;common/text/017.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="info_switch_1-btn_cancel" bordersize="1" float="true" pos="275,272,0,0" width="105" height="33" focusbordercolor="#FFFFFFFF" tab="true" normalimage="file=&apos;common/button/btn_09_01.png&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_09_02.png&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_09_03.png&apos; corner=&apos;10,4,10,4&apos;" foreimage="file=&apos;common/text/018.png&apos; aligncenter=&apos;true&apos;" />
+    </HorizontalLayout>
+</Window>

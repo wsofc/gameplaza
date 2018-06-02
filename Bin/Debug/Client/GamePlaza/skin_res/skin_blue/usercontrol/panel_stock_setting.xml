@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="450,250" caption="0,0,0,35" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" default="true" />
+    <Font id="1" name="宋体" size="12" bold="false" italic="false" />
+    <Container width="400" height="400" bkimage="file=&apos;common/bg/bg_3.png&apos; corner=&apos;10,50,10,10&apos;">
+        <Label text="设置库存" float="true" pos="9,9,0,0" width="66" height="18" textcolor="#FF1FCBE3" />
+        <Label text="当前库存为：" float="true" pos="50,45,0,0" width="100" height="20" textcolor="#FF969696" font="0" align="right" />
+        <Label text="大写：" float="true" pos="50,85,0,0" width="100" height="20" textcolor="#FF969696" font="0" align="right" />
+        <Label text="输入新库存值：" float="true" pos="50,125,0,0" width="100" height="20" textcolor="#FF969696" font="0" align="right" />
+        <Label text="大写：" float="true" pos="50,165,0,0" width="100" height="20" textcolor="#FF969696" font="0" align="right" />
+        <Label name="panel_stock_setting-lab_cur_value" text="0" float="true" pos="150,45,0,0" width="250" height="20" textpadding="6,0,0,0" textcolor="#FF969696" font="0" endellipsis="true" />
+        <Label name="panel_stock_setting-lab_cur_capital" text="0" float="true" pos="150,85,0,0" width="250" height="20" textpadding="6,0,0,0" textcolor="#FF969696" font="0" endellipsis="true" />
+        <RichEdit name="panel_stock_setting-edt_new_value" float="true" pos="155,121,0,0" width="250" height="30" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" bkcolor="#FFFFFFFF" tab="true" font="0" textcolor="#FFFF0000" maxchar="20" textpadding="12,8,12,0" />
+        <Label name="panel_stock_setting-lab_new_capital" text="0" float="true" pos="150,165,0,0" width="250" height="20" textpadding="6,0,0,0" textcolor="#FF969696" font="0" endellipsis="true" />
+        <Button name="panel_stock_setting-btn_ensure" bordersize="1" float="true" pos="110,205,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_11_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_11_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_11_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_ensure.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="panel_stock_setting-btn_cancel" bordersize="1" float="true" pos="257,205,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_10_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_10_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_10_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_cancel.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="panel_stock_setting-btn_close" bordersize="1" float="true" pos="397,5,0,0" width="44" height="24" focusbordercolor="#FFFF0000" tab="true" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,72,44,96&apos;" />
+    </Container>
+</Window>

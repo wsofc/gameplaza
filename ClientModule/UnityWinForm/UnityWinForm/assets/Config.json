@@ -1,0 +1,8 @@
+{
+    // 若注释掉该字段,则会从命令参数中读取,否则读取该字段
+    // 是否显示玩家列表
+    "OpenUserList" : false,
+
+    // 是否打印玩家进出消息
+    "OpenPrintUserInOutMsg": false
+}

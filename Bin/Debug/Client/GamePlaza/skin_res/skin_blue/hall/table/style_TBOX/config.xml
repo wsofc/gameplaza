@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <Container width="200" height="260">
+        <Container float="true" pos="0,10,0,0" width="200" height="240">
+            <Control name="table_x_bg" float="true" pos="5,14,0,0" width="190" height="185" bkimage="TableNormal.png" />
+            <Button name="table_x_seat_box_0" float="true" pos="26,54,0,0" width="40" height="40" hotimage="box.png" />
+            <Button name="table_x_seat_box_1" float="true" pos="80,26,0,0" width="40" height="40" hotimage="box.png" />
+            <Button name="table_x_seat_box_2" float="true" pos="134,54,0,0" width="40" height="40" hotimage="box.png" />
+            <Button name="table_x_seat_box_3" float="true" pos="134,118,0,0" width="40" height="40" hotimage="box.png" />
+            <Button name="table_x_seat_box_4" float="true" pos="80,148,0,0" width="40" height="40" hotimage="box.png" />
+            <Button name="table_x_seat_box_5" float="true" pos="26,116,0,0" width="40" height="40" hotimage="box.png" />
+            <Text name="table_x_seat_0_text" text="player_0" tooltip="player_0" float="true" pos="14,28,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" font="1" align="center" endellipsis="true" />
+            <Text name="table_x_seat_1_text" text="player_1" tooltip="player_1" float="true" pos="68,0,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" font="1" align="center" endellipsis="true" />
+            <Text name="table_x_seat_2_text" text="player_2" tooltip="player_2" float="true" pos="122,28,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" font="1" align="center" endellipsis="true" />
+            <Text name="table_x_seat_3_text" text="player_3" tooltip="player_3" float="true" pos="122,160,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" font="1" align="center" endellipsis="true" />
+            <Text name="table_x_seat_4_text" text="player_4" tooltip="player_4" float="true" pos="68,191,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" font="1" align="center" endellipsis="true" />
+            <Text name="table_x_seat_5_text" text="player_5" tooltip="player_5" float="true" pos="14,160,0,0" width="64" height="24" maxheight="0" maxwidth="0" textpadding="2,0,2,0" font="1" align="center" endellipsis="true" />
+            <Control name="table_x_locker" float="true" pos="92,96,0,0" width="16" height="16" bkimage="Locker.png" />
+            <Control name="table_x_seat_0_ready" float="true" pos="73,82,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Control name="table_x_seat_1_ready" float="true" pos="92,72,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Control name="table_x_seat_2_ready" float="true" pos="113,82,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Control name="table_x_seat_3_ready" float="true" pos="113,110,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Control name="table_x_seat_4_ready" float="true" pos="92,126,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Control name="table_x_seat_5_ready" float="true" pos="73,110,0,0" width="16" height="16" bkimage="UserReady.png" />
+            <Label name="table_x_index" text="-- id --" float="true" pos="70,220,0,0" width="60" height="16" textcolor="#FFFF5F1F" font="0" align="center" />
+        </Container>
+    </Container>
+</Window>

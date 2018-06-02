@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="530,360" caption="0,0,0,30" bktrans="true">
+    <Font id="0" name="宋体" size="12" bold="false" italic="false" />
+    <Font id="1" name="宋体" size="13" bold="false" italic="false" />
+    <Font id="2" name="宋体" size="14" bold="false" italic="false" />
+    <Font id="3" name="宋体" size="16" bold="false" italic="false" />
+    <VerticalLayout bkimage="file=&apos;common/blocks/dlg_block.png&apos; corner=&apos;10,40,10,10&apos;">
+        <Label text="银行" float="true" pos="0,0,0,0" width="174" height="30" textpadding="10,4,0,0" textcolor="#FF000001" font="0" />
+        <Control float="true" pos="2,34,0,0" width="138" height="322" bkimage="file=&apos;common/blocks/block_gray.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Option name="bank-opt_1" text="存取款" bordersize="1" float="true" pos="2,34,0,0" width="138" height="38" focusbordercolor="#FF000000" tab="true" textcolor="#FF000001" font="0" hotimage="file=&apos;common/list/hot.png&apos; corner=&apos;6,6,6,6&apos;" hottextcolor="#FF5175B1" group="bank_op" selected="true" selectedimage="file=&apos;common/list/select.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control name="bank-split_1" float="true" pos="2,72,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_2" text="修改密码" bordersize="1" float="true" pos="2,75,0,0" width="138" height="38" focusbordercolor="#FF000000" tab="true" textcolor="#FF000001" font="0" hotimage="file=&apos;common/list/hot.png&apos; corner=&apos;6,6,6,6&apos;" hottextcolor="#FF5175B1" group="bank_op" selectedimage="file=&apos;common/list/select.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control name="bank-split_2" float="true" pos="2,114,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_3" text="魅力兑换" bordersize="1" float="true" pos="2,116,0,0" width="138" height="38" focusbordercolor="#FF000000" tab="true" textcolor="#FF000001" font="0" hotimage="file=&apos;common/list/hot.png&apos; corner=&apos;6,6,6,6&apos;" hottextcolor="#FF5175B1" group="bank_op" selectedimage="file=&apos;common/list/select.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control name="bank-plit_3" float="true" pos="2,154,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_4" text="魅力明细" bordersize="1" float="true" pos="2,156,0,0" width="138" height="38" focusbordercolor="#FF000000" tab="true" textcolor="#FF000001" font="0" hotimage="file=&apos;common/list/hot.png&apos; corner=&apos;6,6,6,6&apos;" hottextcolor="#FF5175B1" group="bank_op" selectedimage="file=&apos;common/list/select.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control name="bank-split_4" float="true" pos="2,194,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <Option name="bank-opt_5" text="积分返利" bordersize="1" float="true" pos="2,196,0,0" width="138" height="38" focusbordercolor="#FF000000" tab="true" textcolor="#FF000001" font="0" hotimage="file=&apos;common/list/hot.png&apos; corner=&apos;6,6,6,6&apos;" hottextcolor="#FF5175B1" group="bank_op" selectedimage="file=&apos;common/list/select.png&apos; corner=&apos;6,6,6,6&apos;" />
+        <Control name="bank-split_5" float="true" pos="2,236,0,0" width="134" height="2" bkimage="hall/split.png" />
+        <TabLayout name="bank-switch" float="true" pos="142,33,0,0" width="385" height="285">
+            <bank_switch_1 name="bank-switch_1" />
+            <bank_switch_2 name="bank-switch_2" />
+            <bank_switch_3 name="bank-switch_3" />
+            <bank_switch_4 name="bank-switch_4" />
+            <bank_switch_5 name="bank-switch_5" />
+        </TabLayout>
+        <Button name="bank-closebtn" bordersize="1" float="true" pos="478,3,0,0" width="43" height="26" focusbordercolor="#FFFFFFFF" align="center" normalimage="file=&apos;common/button/close.png&apos; source=&apos;0,0,43,26&apos;" hotimage="file=&apos;common/button/close.png&apos; source=&apos;43,0,86,26&apos;" pushedimage="file=&apos;common/button/close.png&apos; source=&apos;86,0,129,26&apos;" disabledimage="file=&apos;common/button/close.png&apos; source=&apos;129,0,172,26&apos;" />
+        <Text text="温馨提示:" float="true" pos="163,320,0,0" width="60" height="28" textpadding="2,0,2,0" textcolor="#FFFF0000" font="1" />
+        <Text text="默认的银行密码为您的登录密码,为了您的账户安全,请修改,切勿和登录密码一致" float="true" pos="223,320,0,0" width="298" height="28" textpadding="2,0,2,0" textcolor="#FF969696" font="1" endellipsis="true" />
+    </VerticalLayout>
+</Window>

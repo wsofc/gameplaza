@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="280,180" caption="0,0,0,35" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Container bkimage="file=&apos;common/bg/bg_2.png&apos; corner=&apos;10,50,10,10&apos;">
+        <Label float="true" pos="19,7,0,0" width="64" height="19" bkimage="file=&apos;hall/mall/title_buy.png&apos; aligncenter=&apos;true&apos;" />
+        <Label text="请输入您的银行密码:" float="true" pos="29,47,0,0" width="150" height="20" textcolor="#FF696969" font="0" />
+        <RichEdit name="mall_buy_check-edt_password" float="true" pos="30,75,0,0" width="220" height="28" bkimage="file=&apos;common/blocks/fr_input1.png&apos; corner=&apos;6,6,6,6&apos;" bkcolor="#FFFFFFFF" tab="true" font="0" textcolor="#FFFF0000" maxchar="18" readonlyshowcaret="true" password="true" autohscroll="true" textpadding="8,6,8,0" />
+        <Option name="mall_buy_check-opt_password" bordersize="1" float="true" pos="30,110,0,0" width="24" height="24" bkimage="file=&apos;common/blocks/option_bg_2.png&apos; aligncenter=&apos;true&apos;" focusbordercolor="#FFFF0000" tab="true" selectedimage="file=&apos;common/blocks/option_sel_2.png&apos; aligncenter=&apos;true&apos;" />
+        <Label text="记住密码(仅对本次登录有效)" float="true" pos="55,110,0,0" width="193" height="24" textpadding="2,0,2,0" textcolor="#FF696969" font="0" />
+        <Button name="mall_buy_check-btn_ensure" bordersize="1" float="true" pos="99,140,0,0" width="83" height="31" focusbordercolor="#FFFF0000" tab="true" normalimage="file=&apos;common/button/btn_11_01.png&apos; corner=&apos;6,6,6,6&apos;" hotimage="file=&apos;common/button/btn_11_02.png&apos; corner=&apos;6,6,6,6&apos;" pushedimage="file=&apos;common/button/btn_11_03.png&apos; corner=&apos;6,6,6,6&apos;" foreimage="file=&apos;dialog/img_ensure.png&apos; aligncenter=&apos;true&apos;" />
+        <Button name="mall_buy_check-btn_close" bordersize="1" float="true" pos="225,3,0,0" width="44" height="24" focusbordercolor="#FFFF0000" tab="true" align="center" normalimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,0,44,24&apos;" hotimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,24,44,48&apos;" pushedimage="file=&apos;common/button/btn_close.png&apos; source=&apos;0,48,44,72&apos;" disabledimage="file=&apos;common/button/btn_close.png&apos; corner=&apos;0,72,44,96&apos;" />
+    </Container>
+</Window>

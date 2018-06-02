@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fontcolor>
+	<fonts>
+		<font id="1" textcolor="0xFFFFFFFF" hottextcolor="0xFFFFFFFF" pushedtextcolor="0xFFFFFFFF" selectedtextcolor="0xFFFFFFFF" disabledtextcolor="0xFFFFFFFF" bkcolor="0xFFFFFFFF" hotbkcolor="0x7F8FBAF3" selectedbkcolor="0xFFFFFFFF" focusbordercolor="0xFFFFFFFF"></font>
+		<font id="2" textcolor="0xFFFFFFFF" hottextcolor="0xFFFFFFFF" pushedtextcolor="0xFFFFFFFF" selectedtextcolor="0xFFFFFFFF" disabledtextcolor="0xFFFFFFFF" bkcolor="0xFFFFFFFF" hotbkcolor="0xFFFFFFFF" selectedbkcolor="0xFFFFFFFF" focusbordercolor="0xFFFFFFFF"></font>
+		<font id="3" textcolor="0xFFFFFFFF" hottextcolor="0xFFFFFFFF" pushedtextcolor="0xFFFFFFFF" selectedtextcolor="0xFFFFFFFF" disabledtextcolor="0xFFFFFFFF" bkcolor="0xFFFFFFFF" hotbkcolor="0xB2485B93" selectedbkcolor="0x4CE57E46" focusbordercolor="0xFFFFFFFF"></font>
+		<font id="4" textcolor="0xFF000001" hottextcolor="0xFFFFFFFF" pushedtextcolor="0xFFFFFFFF" selectedtextcolor="0xFFFFFFFF" disabledtextcolor="0xFFFFFFFF" bkcolor="0x00FFFFFF" hotbkcolor="0xFFFFFFFF" selectedbkcolor="0xFFFFFFFF" focusbordercolor="0xFFFFFFFF"></font>
+		<font id="5" textcolor="0xFFF4CF63" hottextcolor="0xFFFFFFFF" pushedtextcolor="0xFFFFFFFF" selectedtextcolor="0xFFFFFFFF" disabledtextcolor="0xFFFFFFFF" bkcolor="0xFFFFFFFF" hotbkcolor="0xFFFFFFFF" selectedbkcolor="0xFFFFFFFF" focusbordercolor="0xFFFFFFFF"></font>
+		<font id="6" textcolor="0xFFE9C05A" hottextcolor="0xFFFFFFFF" pushedtextcolor="0xFFFFFFFF" selectedtextcolor="0xFFFFFFFF" disabledtextcolor="0xFFFFFFFF" bkcolor="0xFFFFFFFF" hotbkcolor="0xFFFFFFFF" selectedbkcolor="0xFFFFFFFF" focusbordercolor="0xFFFFFFFF"></font>
+	</fonts>
+	
+	<table_normal player_color="0xFFFFFFFF" index_color="0xFFFF5F1F" img_ready="" img_lock="" img_hotbox=""></table_normal>
+	<member_order order0_color="0xFFFFFFFF" order1_color="0xFFFF0024" order2_color="0xFFFFC600" order3_color="0xFFFF00FC"></member_order>
+	<chat_color defaultcolor="0xFFFFFFFF" sysheadcolor="0xFFFF0000" systextcolor="0xFFFFFFFF" srcgameidcolor="0xFF00FFFF" srcnameheadcolor="0xFF00FFFF" srcnametextcolor="0xFFFFFFFF" rcvgameidcolor="0xFF00FFFF" rcvnameheadcolor="0xFF00FFFF" rcvnametextcolor="0xFFFFFFFF" propsnamecolor="0xFF00FFFF" propscountcolor="0xFF00FFFF" scrcharmcolor="0xFF00FFFF" rcvcharmcolor="0xFF00FFFF"></chat_color>
+</fontcolor>

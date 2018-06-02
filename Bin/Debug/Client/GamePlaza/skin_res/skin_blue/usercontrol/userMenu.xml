@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true">
+	<Font id="0" name="宋体" size="12" bold="false" default="true" />
+	<Default name="Menu" value="font=&quot;0&quot; bordersize=&quot;1&quot; borderround=&quot;2,2&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;10,0,0,0&quot; itemtextcolor=&quot;0xFFFFFFFF&quot; itemhottextcolor=&quot;0xFFFFFFFF&quot; itemselectedtextcolor=&quot;0xFF000001&quot; itemdisabledbkcolor=&quot;0x7F7A7A7A&quot; bkimage=&quot;file='common/blocks/block_black.png' corner='4,4,4,4'&quot; itemselectedbkcolor=&quot;0x994E649D&quot;" />
+	<Menu>
+		<MenuElement name="usermenu-nickname" text="昵称："  />
+		<MenuElement name="usermenu-gameid" text="游戏ID：" />
+		<MenuElement name="usermenu-golds" text="金币：" />
+		<MenuElement name="usermenu-underwrite" text="个性签名：" />
+		<MenuElement linetype="true" />
+		<MenuElement name="usermenu-location" text="定位玩家" />
+		<MenuElement name="usermenu-set_score" text="设置输赢分数" />
+		<MenuElement name="usermenu-set_win_count" text="设置赢几局" />
+		<MenuElement name="usermenu-set_lost_count" text="设置输几局" />
+		<MenuElement name="usermenu-kick_room" text="踢出房间" />
+		<MenuElement name="usermenu-send_sys" text="发送系统消息" />
+		<MenuElement name="usermenu-fobid_account" text="禁用用户账号" />
+		<MenuElement name="usermenu-look_ip" text="查看用户IP" />
+		<MenuElement name="usermenu-set_room" text="房间设置" />
+		<MenuElement name="usermenu-set_stock" text="设置当前库存" />
+		<MenuElement name="usermenu-add_blacklist" text="加入黑名单" />
+		<MenuElement name="usermenu-del_blacklist" text="删除黑名单" />
+		<MenuElement name="usermenu-set_robot_count" text="设置机器人数量" />
+		<MenuElement name="usermenu-set_robot_score" text="设置机器人分数范围" />
+	</Menu>
+</Window>

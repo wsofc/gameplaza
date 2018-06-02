@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="556,414" caption="0,0,0,50" bktrans="true">
+    <Container width="636" height="458" bkimage="hall/sign/bg_01.png">
+        <Control float="true" pos="207,15,0,0" width="143" height="31" bkimage="file=&apos;hall/sign/sign_title.png&apos; aligncenter=&apos;true&apos;" />
+        <WkeWebkit float="true" name="sign-web" pos="12,60,540,392" />
+        <Button name="sign-closebtn" bordersize="1" float="true" pos="504,18,0,0" width="27" height="27" focusbordercolor="#FFFFFFFF" tab="true" normalimage="common/button/btn_close_normal.png" hotimage="common/button/btn_close_hot.png" pushedimage="common/button/btn_close_down.png" />
+    </Container>
+</Window>

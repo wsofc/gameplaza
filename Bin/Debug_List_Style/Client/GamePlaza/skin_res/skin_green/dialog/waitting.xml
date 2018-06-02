@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="200,100">
+    <VerticalLayout bkimage="file=&apos;common/blocks/block_black.png&apos; corner=&apos;10,10,10,10&apos;">
+        <Control />
+		<HorizontalLayout heigt="32">
+            <Control />
+			<GifAnim width="32" bkimage="dialog/waitting.gif" autoplay="true" autosize="true" />
+            <Control />
+        </HorizontalLayout>
+        <Control />
+    </VerticalLayout>
+</Window>

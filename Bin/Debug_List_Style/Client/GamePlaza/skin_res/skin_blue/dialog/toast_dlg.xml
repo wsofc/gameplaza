@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,40" caption="0,0,0,40" bktrans="true">
+    <Font id="0" name="宋体" size="14" bold="false" italic="false" />
+    <Container width="300" height="38" bkimage="file=&apos;common/blocks/block_trans.png&apos; corner=&apos;6,6,6,6&apos;">
+        <RichEdit name="dialog-edt_content" text="正在请求进入房间,请稍后..." float="true" pos="10,8,0,0" width="200" height="24" font="0" textcolor="#FF000001" readonly="true" textpadding="0,4,0,0" />
+        <Button name="dialog-btn_cancel" text="取 消" bordersize="1" float="true" pos="216,8,0,0" width="70" height="24" focusbordercolor="#FFFFFFFF" font="0" normalimage="file=&apos;common/button/btn_03.png&apos; source=&apos;0,0,60,20&apos; corner=&apos;10,4,10,4&apos;" hotimage="file=&apos;common/button/btn_03.png&apos; source=&apos;60,0,120,20&apos; corner=&apos;10,4,10,4&apos;" pushedimage="file=&apos;common/button/btn_03.png&apos; source=&apos;120,0,180,20&apos; corner=&apos;10,4,10,4&apos;" disabledimage="file=&apos;common/button/btn_03.png&apos; source=&apos;180,0,240,20&apos; corner=&apos;10,4,10,4&apos;" />
+    </Container>
+</Window>

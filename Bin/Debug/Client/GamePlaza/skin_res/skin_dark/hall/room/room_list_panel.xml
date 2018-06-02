@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="784,548">
+    <HorizontalLayout>
+        <HorizontalLayout width="160" bkimage="hall/bg_left.jpg">
+            <Control />
+            <VerticalLayout width="156">
+                <Control height="5" />
+				<VerticalLayout name="roomlistpanel-opts_vlayout">
+				</VerticalLayout>
+				<Control />
+                <HorizontalLayout height="40">
+                    <Control />
+					<!-- 暂时屏蔽返回按钮,因为改变了房间布局 -->
+                    <!-- <Button name="roomlistpanel-back_btn" width="153" textcolor="#FF000000" normalimage="file=&apos;common/button/btn_03_01.png&apos; corner=&apos;20,10,20,10&apos;" hotimage="file=&apos;common/button/btn_03_02.png&apos; corner=&apos;20,10,20,10&apos;" pushedimage="file=&apos;common/button/btn_03_03.png&apos; corner=&apos;20,10,20,10&apos;" foreimage="file=&apos;common/text/text_back.png&apos; aligncenter=&apos;true&apos;" /> -->
+					<Control />
+                </HorizontalLayout>
+            </VerticalLayout>
+            <Control />
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <Control width="7" bkimage="hall/line.png" />
+            <TabLayout name="roomlistpanel-switch" bkimage="file=&apos;hall/bg_room.jpg&apos; corner=&apos;20,20,20,20&apos;">
+			</TabLayout>
+        </HorizontalLayout>
+    </HorizontalLayout>
+</Window>
