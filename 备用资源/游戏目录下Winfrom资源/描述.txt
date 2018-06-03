@@ -1,0 +1,6 @@
+1.Resources\\Config\\gameItem			- 大厅主界面图标
+2.Resources\\Config\\table			- 大厅桌子配置
+3.Resources\\Config\\data\\LEVEL.lm		- 大厅游戏房间等级描述配置
+4.Resources\\ShellForm\\icon.ico		- Winform窗口图标
+5.Resources\\ShellForm\\loading_bg.jpg		- Winform启动时的加载背景
+6.Resources\\ShellForm\\Config.ini		- Winform无进度条启动模式配置

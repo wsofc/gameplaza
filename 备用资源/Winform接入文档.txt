@@ -1,0 +1,437 @@
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// @brief: 	Winform 嵌套框架接入
+// @author:	Aries
+// @date:	2017/10/14
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*
+
+// 主消息
+public const int IPC_MAIN_CONCTROL              = 0x0004;	// 大厅交互主命令
+
+// 子消息
+public const int IPC_SUB_WINGAME_RESIZE         = 0x2001;	// 游戏窗口大小发生改变
+public const int IPC_SUB_WINGAME_MENU_INIT      = 0x2002;	// 游戏菜单初始化
+public const int IPC_SUB_WINGAME_MENU_CONFIG    = 0x2003;	// 游戏菜单配置
+public const int IPC_SUB_WINGAME_MENU_EVENT     = 0x2004;	// 游戏菜单事件
+public const int IPC_SUB_WINGAME_REFRESH        = 0x3001;	// 游戏UI刷新
+public const int IPC_SUB_WINGAME_TIPS_MSG		= 0x4001;	// 游戏打印消息
+public const int IPC_SUB_WINGAME_FINISHED       = 0x5001;	// 游戏配置完毕
+
+一>Winform 嵌套框架介绍:
+	由于原生态 Unity3D 发布到 PC 上，对 Windows 窗口若干属性不兼容，有无开机动画都会造成暂时性卡顿现象,针对该问题解决方案,
+于是采用 Windows 窗口 SetParent + Process.Start 原理进行窗口进程嵌套,这里由于兼容性和稳定性则是采用 Winform 嵌套 exe 方式,而不是采用 Webplayer 这种弱鸡的方式.
+
+二>通讯流程介绍:
+	1.现存的客户端大厅与游戏之间的进程通讯采用 Windows 的 SendMessage + WM_COPYDATA 方式,所有在 Winform 嵌套程序中为了减少工作量和兼容性也采用这种 IPC 方式.
+	2.大致通讯流程：
+		a.未嵌入 Winform 前:	Server-> Client_Plaza -> Clien_Game
+		b.嵌入 Winform 之后: 	Server-> Client_Plaza -> Client_Winform -> Clien_Game
+		c.通讯流程是直线双向,区别在于 Client_Winform 成为了数据中转站,负责解析双向数据,监听守护线程,处理 Window 窗口属性,启动关闭流程,加载显影右侧玩家列表等
+	3.虽然加入了 Winform 框架,但是原有的 Plaza - Game 之间的流程不变,Winform 采用 Hook 统一封装处理,只需要在原有 Game 流程之上加入若干额外的监听消息和配置资源等,
+其他的流程不变
+
+三>添加消息介绍:
+	我这里通讯相关的所有全局变量、结构体、么局等定义统一封装在 Protocol 类里,下面就不过多解释了
+	
+	1.启动游戏:发送命令参数格式为:"Transmittal_Begin[{0},{1},{2}]Transmittal_End"共四个参数,分别代表"目标通讯的窗口句柄,游戏窗口宽,游戏窗口高"
+	如下解析参数:
+	
+		public static IntPtr PlazaWnd           = IntPtr.Zero;                  // 大厅窗口句柄
+        public static int WndInitWidth          = 1280;                         // 游戏初始窗口宽
+        public static int WndInitHeight         = 720;                          // 游戏初始窗口高
+		
+        string strComLine = Environment.CommandLine;
+        int iBegin = strComLine.IndexOf('[') + 1;
+        int iEnd = strComLine.IndexOf(']');
+        if (iBegin >= 0 && iEnd > iBegin)
+        {
+            string str = strComLine.Substring(iBegin, iEnd - iBegin);
+            string[] strArray = str.Split(',');
+
+            Model.Protocol.PlazaWnd = (IntPtr)int.Parse(strArray[0]);
+            int iw = int.Parse(strArray[1]);
+            int ih = int.Parse(strArray[2]);
+            if (iw > 0) Model.Protocol.WndInitWidth = iw;
+            if (ih > 0) Model.Protocol.WndInitHeight = ih;
+            UIAdapterCamera.Instance.AdaptScreen(iw, ih, false);
+        }
+		
+	2.游戏启动完毕,下发用户Comming消息,Comming完毕后下发 IPC_SUB_WINGAME_MENU_INIT 菜单配置消息(玩家列表和菜单都分离至Winform中处理,根据不同游戏动态配置菜单)
+	结构体定义如下:
+	
+		注: Winfrom 菜单框架由两部分组成: Winfrom 默认静态菜单 + 游戏控制动态菜单(游戏控制菜单枚举由游戏自己定义,Winfrom只接受/显示/返回键值)
+		
+		// Winfrom定义:	静态菜单键值枚举
+		//public enum eUserMenuType
+		//{
+		//    UMT_NONE = 0,           // 无
+		//    UMT_USER_NAME,          // 用户 昵称
+		//    UMT_USER_GAMEID,        // 用户 显示ID
+		//    UMT_USER_GOLD,          // 用户 金币
+		//    UMT_USER_UNDERWRITE,    // 用户 个性签名
+		//    UMT_SEPARATOR,          // 间隔线
+		//    UMT_EXTRA               // 预留位
+		//}
+		
+		// 游戏定义: 控制动态菜单键值枚举(注：这里由于是菜单组合部分的动态部分,为了统一处理,这里枚举值必须从100起,小于100的部分预留给Winform静态菜单)
+		public enum eUserMenuType
+        {
+            UMT_NONE = 100,
+            UMT_CTL_NEXTWIN,        // 控制 下局赢
+            UMT_CTL_NEXTLOSE,       // 控制 下局输
+            UMT_CTL_TIMELYMONITOR,  // 控制 实时监控
+            UMT_CTL_VIEWBETS,       // 控制 查看下注
+            UMT_CTL_KICKROOM,       // 控制 剔出房间
+            UMT_EXTRA               // 预留项
+        }
+		
+		// 指定定义哪个鼠标按钮曾按下的常数(请参照 System.Windows.Forms.MouseButtons枚举)
+        public enum eMouseButtons
+        {
+            None        = 0,            // 未曾按下鼠标按钮
+            Left        = 1048576,      // 鼠标左按钮曾按下
+            Right       = 2097152,      // 鼠标右按钮曾按下
+            Middle      = 4194304,      // 鼠标中按钮曾按下
+            XButton1    = 8388608,      // 第 1 个 XButton 曾按下
+            XButton2    = 16777216,     // 第 2 个 XButton 曾按下
+        }
+		
+		//菜单键值信息
+		[StructLayout(LayoutKind.Sequential)]
+		public struct tagUserMenuInfo
+		{
+			public tagUserMenuInfo(UInt32 dwMenuKey, string strMenuValue, byte cbActive = Define.TRUE, byte cbVisible = Define.TRUE
+				, byte cbSelfActive = Define.TRUE, byte cbSelfVisible = Define.TRUE)
+			{
+				this.dwMenuKey          = dwMenuKey;
+				this.pzMenuValue        = new byte[Define.NAME_LEN];
+				this.cbActive           = cbActive;
+				this.cbVisible          = cbVisible;
+				this.cbSelfActive       = cbSelfActive;
+				this.cbSelfVisible      = cbSelfVisible;
+				Util.StringToTchar(ref this.pzMenuValue, strMenuValue);
+			}
+
+			public byte     cbActive;           // 是否激活(默认true)
+			public byte     cbVisible;          // 是否显示(默认true)
+			public byte     cbSelfActive;       // 若是自己是否激活(默认true)
+			public byte     cbSelfVisible;      // 若是自己是否显示(默认true)
+			public UInt32   dwMenuKey;          // 菜单键
+
+			[MarshalAs(UnmanagedType.ByValArray, SizeConst = Define.NAME_LEN)]
+			public byte[]   pzMenuValue;        // 菜单值
+		}
+		
+		//菜单事件信息
+		[StructLayout(LayoutKind.Sequential)]
+		public struct tagUserMenuEvent
+		{
+			public UInt32   dwMouseButtons;     // 鼠标键值(请参照 eMouseButtons 枚举)
+			public UInt32   dwMenuType;         // 菜单键值
+			public UInt32   dwUserID;           // 用户ID
+		}
+		
+		游戏中收到 IPC_SUB_WINGAME_MENU_INIT 消息后 伪代码如下:
+		// 游戏控制动态菜单配置
+		case Protocol.IPC_SUB_WINGAME_MENU_INIT:
+			{
+				ArrayList array = new ArrayList();
+				array.Add(new Protocol.tagUserMenuInfo((UInt32)Protocol.eUserMenuType.UMT_CTL_NEXTWIN, "下局赢", Define.FALSE));
+				array.Add(new Protocol.tagUserMenuInfo((UInt32)Protocol.eUserMenuType.UMT_CTL_NEXTLOSE, "下局输", Define.FALSE));
+				array.Add(new Protocol.tagUserMenuInfo((UInt32)Protocol.eUserMenuType.UMT_CTL_TIMELYMONITOR, "实时监控", Define.TRUE));
+				array.Add(new Protocol.tagUserMenuInfo((UInt32)Protocol.eUserMenuType.UMT_CTL_VIEWBETS, "查看下注", Define.FALSE));
+				array.Add(new Protocol.tagUserMenuInfo((UInt32)Protocol.eUserMenuType.UMT_CTL_KICKROOM, "踢出房间", Define.TRUE, Define.TRUE, Define.FALSE));
+				
+				if (array.Count <= 0) return;
+				int iLen = array.Count * Marshal.SizeOf(array[0]);
+				byte[] cbData = new byte[iLen];
+				for (int i = 0; i < array.Count; ++i)
+				{
+					Protocol.tagUserMenuInfo menu_info = (Protocol.tagUserMenuInfo)array[i];
+					byte[] cbTmp = Util.StructToBytes(menu_info);
+					Buffer.BlockCopy(cbTmp, 0, cbData, i * cbTmp.Length, cbTmp.Length);
+				}
+				this.SendData(Protocol.IPC_MAIN_CONCTROL, Protocol.IPC_SUB_WINGAME_MENU_CONFIG, Protocol.IPC_FLAG_TO_GAMEPLAZA, cbData);
+			} break;
+		
+		Winform框架中点击菜单后的事件,以 IPC_SUB_WINGAME_MENU_EVENT 消息下发到游戏中:
+		// 菜单事件
+		case Protocol.IPC_SUB_WINGAME_MENU_EVENT:
+			{
+				object obj = Util.BytesToStruct<Protocol.tagUserMenuEvent>(cbDataBuffer);
+				if (obj == null) return;
+
+				Protocol.tagUserMenuEvent tagEvent = (Protocol.tagUserMenuEvent)obj;
+				if ((Protocol.eMouseButtons)tagEvent.dwMouseButtons == Protocol.eMouseButtons.Left)
+				{
+					Protocol.eUserMenuType eType = (Protocol.eUserMenuType)tagEvent.dwMenuType;
+					switch (eType)
+					{
+						case Protocol.eUserMenuType.UMT_NONE:               break;
+						case Protocol.eUserMenuType.UMT_EXTRA:              break;
+						case Protocol.eUserMenuType.UMT_CTL_NEXTWIN:        break;
+						case Protocol.eUserMenuType.UMT_CTL_NEXTLOSE:       break;
+						case Protocol.eUserMenuType.UMT_CTL_VIEWBETS:       break;
+
+						// 实时监控
+						case Protocol.eUserMenuType.UMT_CTL_TIMELYMONITOR:
+							{
+								Model.UserModel user = Model.UserManager.GetInstance().GetUserByUserID(tagEvent.dwUserID);
+								MainView.Instance.ShowControlView(user);
+							} break;
+
+						// 踢出房间
+						case Protocol.eUserMenuType.UMT_CTL_KICKROOM:
+							{
+								Model.UserModel user = Model.UserManager.GetInstance().GetUserByUserID(tagEvent.dwUserID);
+								ControlViewMgr.Instance.KickRoom(user);
+							} break;
+					}
+				}
+			}break;
+	
+		这里要修改改下 SendData 函数，原来的不支持传入数组,只支持结构体,现在要加入传入数组支持
+		public bool SendData(ushort wMainCmdID, ushort wSubCmdID, ushort wFlag = Protocol.IPC_FLAG_TO_SERVER, object stuData = null, int iOffsetLen = 0)
+        {
+            UnityEngine.Debug.Assert(Server.IsWindow(Protocol.PlazaWnd) == Define.TRUE);
+            if (Server.IsWindow(Protocol.PlazaWnd) == Define.FALSE)
+            {
+                UnityEngine.Debug.LogErrorFormat("ServerHelper - SendMsg Failed, Not Fount the Target Window [{0}]", Protocol.PlazaWnd);
+                return false;
+            }
+
+            // 初始化Protocol.LIPC_Buffer结构对象
+            m_stuIpcBuffer.Head.wVersion   = Protocol.IPC_VER;
+            m_stuIpcBuffer.Head.wMainCmdID = wMainCmdID;
+            m_stuIpcBuffer.Head.wSubCmdID  = wSubCmdID;
+            m_stuIpcBuffer.Head.wDataSize  = 0;
+            Array.Clear(m_stuIpcBuffer.bData, 0, m_stuIpcBuffer.bData.Length);
+
+            try
+            {
+                // 填充ipc缓冲数据
+                if (stuData != null)
+                {
+					////////////////////////////////////////////////////////////////////////////////////////
+					// 主要修改这里
+					// 数组
+                    if (stuData.GetType() == typeof(byte[]))
+                    {
+                        byte[] cbData = stuData as byte[];
+                        Debug.Assert(cbData.Length <= Protocol.IPC_PACKAGE);
+                        if (cbData.Length > Protocol.IPC_PACKAGE)
+                        {
+                            UnityEngine.Debug.LogErrorFormat("Server - SendMsg Failed, Too large data [real_size = {0}, spec_size={1}]"
+                                , cbData.Length, Protocol.IPC_PACKAGE);
+                            return false;
+                        }
+
+                        m_stuIpcBuffer.Head.wDataSize = (ushort)cbData.Length;
+                        Buffer.BlockCopy(cbData, 0, m_stuIpcBuffer.bData, 0, m_stuIpcBuffer.Head.wDataSize);
+                    }
+					////////////////////////////////////////////////////////////////////////////////////////
+					// 结构体
+                    else
+                    {
+                        UnityEngine.Debug.Assert(Marshal.SizeOf(stuData) <= Protocol.IPC_PACKAGE);
+                        if (Marshal.SizeOf(stuData) > Protocol.IPC_PACKAGE)
+                        {
+                            UnityEngine.Debug.LogErrorFormat("ServerHelper - SendMsg Failed, Too large data [real_size = {0}, spec_size={1}]"
+                                , Marshal.SizeOf(stuData), Protocol.IPC_PACKAGE);
+                            return false;
+                        }
+
+                        m_stuIpcBuffer.Head.wDataSize = (ushort)(Marshal.SizeOf(stuData) - iOffsetLen);
+                        Marshal.StructureToPtr(stuData, m_pBuffer, false);
+                        Marshal.Copy(m_pBuffer, m_stuIpcBuffer.bData, 0, m_stuIpcBuffer.Head.wDataSize);
+                    }
+                }
+
+                // 结构体序列化
+                Marshal.StructureToPtr(m_stuIpcBuffer, m_pBuffer, false);
+
+                // COPYDATA赋值
+                m_stuCopyData.lpData = m_pBuffer;
+                m_stuCopyData.dwData = (IntPtr)wFlag;
+                m_stuCopyData.cbData = Protocol.IPC_BUFFER;
+
+                // COPYDATA序列化
+                Marshal.StructureToPtr(m_stuCopyData, m_pCopyData, false);
+
+                //发送msg
+                Server.SendMessage(Protocol.PlazaWnd, Protocol.WM_COPYDATA, IntPtr.Zero, m_pCopyData);
+            }
+            catch (OutOfMemoryException oex)
+            {
+                UnityEngine.Debug.LogErrorFormat("ServerHelper - SendMsg AllocHGlobal Failed [Msg = {0}]", oex);
+            }
+
+            return true;
+        }
+	
+	3.窗口大小发生改变时
+		//  窗口大小
+        [StructLayout(LayoutKind.Sequential)]
+        public struct SIZE
+        {
+            public Int32    cx;
+            public Int32    cy;
+        }
+		
+		case Protocol.IPC_SUB_WINGAME_RESIZE:
+		{
+			object obj = Util.BytesToStruct<Protocol.SIZE>(cbDataBuffer);
+			if (obj == null) return;
+
+			Protocol.SIZE win_size = (Protocol.SIZE)obj;
+			
+			// 适配窗口大小
+			UIAdapterCamera.Instance.AdaptScreen(win_size.cx, win_size.cy);
+		}break;
+		
+		游戏退出时记得重置下注册表:
+		public void RestoreScreenValue()
+		{
+			PlayerPrefs.SetInt("Screenmanager Resolution Width", this.m_iDeviceWidth);
+			PlayerPrefs.SetInt("Screenmanager Resolution Height", this.m_iDeviceHeight);
+			PlayerPrefs.SetInt("Screenmanager Is Fullscreen mode", 0);
+		}
+	
+	4.Winform中最小化窗口,恢复窗口后,会下发刷新消息:
+	
+		void Refresh()
+		{
+			// 刷新当前UI
+			UIPanel panel = this.m_uiRoot.GetComponent<UIPanel>();
+			if (panel != null)
+			{
+				panel.SetDirty();
+				panel.Refresh();
+			}
+		}
+		
+		// ngui要刷新两次才有效,不知道什么鬼
+		public void RefreshTwice()
+		{
+			this.Refresh();
+			this.Refresh();
+		}
+	
+		// 游戏UI刷新
+		case Protocol.IPC_SUB_WINGAME_REFRESH:
+			{
+				UIAdapterCamera.Instance.RefreshTwice();
+			}break;
+		
+	5.添加全局模式:
+		public const bool   GAME_TEST_SWITCH        = false;        // 是否是游戏测试模式
+        public const bool   FRAMEWORK_NESTED_MODEL  = false;        // 是否启用框架嵌套模式
+		
+		如果 FRAMEWORK_NESTED_MODEL 开启,则关闭游戏心跳、适配类中 Update 里面 Alt + Enter / Esc 键等消息等
+		
+		// 心跳检测
+		case Protocol.IPC_SUB_HEARTBEAT:
+			{
+				if (!Define.FRAMEWORK_NESTED_MODEL)
+				{
+					//UnityEngine.Debug.Log("ServerHelper - Heartbeat");
+					this.SendData(Protocol.IPC_MAIN_CONCTROL, Protocol.IPC_SUB_HEARTBEAT, Protocol.IPC_FLAG_TO_GAMEPLAZA);
+				}
+			}break;
+			
+		// Alt + Enter 全屏, Esc取消全屏
+		void Update()
+		{
+			if (!Model.Define.FRAMEWORK_NESTED_MODEL)
+			{
+				bool bKeyDown_Alt = Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt);
+				bool bKetDown_Enter = Input.GetKeyDown(KeyCode.Return) | Input.GetKeyDown(KeyCode.KeypadEnter);
+
+				int w = Model.Protocol.WndInitWidth;
+				int h = Model.Protocol.WndInitHeight;
+				if (bKeyDown_Alt && bKetDown_Enter)
+				{
+					this.AdaptScreen(w, h, !m_bFullMode);
+				}
+				else if (Input.GetKeyDown(KeyCode.Escape))
+				{
+					this.AdaptScreen(w, h, false);
+				}
+			}
+		}
+	
+	除了上述额外添加的消息外，游戏中其他流程不变，心跳监听守护线程统一由Winform处理
+	
+	6.游戏提示打印消息 IPC_SUB_WINGAME_TIPS_MSG,必须在有列表的模式下才有效,结构体如下(支持颜色符解析,格式为: "[rgba] string content [-]")
+		
+		// 系统消息长度
+		public const int    MAX_SYSMESSAGE_LEN  = 1024;
+		
+		//消息类型
+		public const int    SMT_INFO            = 0x0001;           // 信息消息
+		public const int    SMT_EJECT           = 0x0002;           // 弹出消息
+		public const int    SMT_GLOBAL          = 0x0004;           // 全局消息
+		public const int    SMT_CLOSE_GAME      = 0x1000;           // 关闭游戏
+		public const int    SMT_CLOSE_ROOM      = 0x1000;           // 关闭房间
+		public const int    SMT_INTERMIT_LINE   = 0x4000;           // 中断连接
+		
+		//消息数据包
+		[StructLayout(LayoutKind.Sequential)]
+		public struct tagGS_Message
+		{
+			public tagGS_Message(int i)
+			{
+				this.wMessageType   = 0;
+				this.wMessageLength = 0;
+				this.szContent      = new byte[Define.MAX_SYSMESSAGE_LEN];
+			}
+
+			public UInt16   wMessageType;						                // 消息类型
+			public UInt16   wMessageLength;						                // 消息长度
+
+			[MarshalAs(UnmanagedType.ByValArray, SizeConst = Define.MAX_SYSMESSAGE_LEN)]
+			public byte[]   szContent;						                    // 消息内容
+		};
+	
+	7.游戏加载菜单完毕,需要在 IPC_SUB_WINGAME_MENU_CONFIG 之后(若游戏无菜单配置, 则在 IPC_SUB_WINGAME_MENU_INIT 中) 发送 IPC_SUB_WINGAME_FINISHED 告知Winform 配置完毕,准备就绪,否则 Winform 进度条会一直处于等待状态中.
+	
+		//游戏配置
+		[StructLayout(LayoutKind.Sequential)]
+		public struct tagGameConfig
+		{
+			public byte     cbOpenUserList;                                     // 是否显示右侧玩家列表栏
+			public byte     cbOpenPrintUserInOutMsg;                            // 是否打印玩家进出提示消息
+		}
+		
+		// 菜单配置
+		case Protocol.IPC_SUB_WINGAME_MENU_INIT:
+		{
+			...
+			// 有动态/静态菜单就发送配置消息
+			this.SendData(Protocol.IPC_MAIN_CONCTROL, Protocol.IPC_SUB_WINGAME_MENU_CONFIG, Protocol.IPC_FLAG_TO_GAMEPLAZA, data);
+			
+			// 最后
+			// 发送 游戏配置完毕
+			Protocol.tagGameConfig tGameConfig = new Protocol.tagGameConfig();
+			tGameConfig.cbOpenUserList = Define.TRUE;
+			tGameConfig.cbOpenPrintUserInOutMsg = Define.FALSE;
+			this.SendData(Protocol.IPC_MAIN_CONCTROL, Protocol.IPC_SUB_WINGAME_FINISHED, Protocol.IPC_FLAG_TO_GAMEPLAZA, tGameConfig);
+		}break;
+		
+	8.点击关闭 Winform 按钮时,会向游戏进程发送一条 IPC_SUB_CLOSE_FRAME 关闭消息,游戏依据次来处理关闭前的若干提示等.
+	
+	9.游戏关闭时(即调用 Application.Quit 前),需要向Winform发送一条 IPC_SUB_CLOSE_FRAME 或者 IPC_SUB_CLOSE_FRAME_EX 关闭确认消息,否则,Winform 会通过守护线程去被动关闭窗口,会出现短暂的游戏区域白屏,因此需要优化处理
+	
+	10. Unity3D 打包PC, PlayerSetting 中的 Force Single Instance(是否只能存在一个单例程序) 取消勾选, 让其可以多开
+	
+	11. 游戏打包后, 需要在XX_Data->Resources里添加ShellForm文件夹,里面在添加loading_bg.jpg 和 icon.ico等资源,若不添加,则Winform会读取默认资源
+	
+四>测试流程
+	1.游戏主流程逻辑还是按照以前测试一样,启动大厅,连接Unity测试(注意,如果只是测试游戏主逻辑,则开启 GAME_TEST_SWITCH 且 关闭 FRAMEWORK_NESTED_MODEL)
+	2.游戏逻辑ok之后, 要启用Winform 则 关闭GAME_TEST_SWITCH 且 开启 FRAMEWORK_NESTED_MODEL,打包PC,启动"嵌套模式.exe"
+*/
